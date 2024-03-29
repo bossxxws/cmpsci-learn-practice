@@ -15,5 +15,7 @@ int main()
 	printf("%c\n",'\a');
 	printf("%c\n", '\a');
 
+	printf("%d",2024);
+
 	return 0;
 }
