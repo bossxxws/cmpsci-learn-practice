@@ -1,0 +1,5 @@
+n = input("Enter your first name: ")
+k = input("Enter your surname: ")
+n=n.lower()
+k=k.upper()
+print(f"Hi {n} {k}, how are you?")

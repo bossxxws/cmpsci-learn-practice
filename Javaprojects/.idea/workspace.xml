@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca286ce4-d449-4f13-b4d8-c341451590df" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="2dLW3tkhiwQfQ9DKjEsP84VkZoL" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.a08_experiment03_t1">
+    <configuration name="a01_experiment01_t1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nefu.lessons.a01_experiment01_t1" />
+      <module name="Javaprojects" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="a04_experiment01_t4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nefu.lessons.a04_experiment01_t4" />
+      <module name="Javaprojects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nefu.lessons.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="a05_experiment02_t2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nefu.lessons.a05_experiment02_t2" />
+      <module name="Javaprojects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nefu.lessons.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="a07_experiment02_t3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nefu.lessons.a07_experiment02_t3" />
+      <module name="Javaprojects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nefu.lessons.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="a08_experiment03_t1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nefu.lessons.a08_experiment03_t1" />
+      <module name="Javaprojects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nefu.lessons.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.a08_experiment03_t1" />
+        <item itemvalue="Application.a07_experiment02_t3" />
+        <item itemvalue="Application.a05_experiment02_t2" />
+        <item itemvalue="Application.a04_experiment01_t4" />
+        <item itemvalue="Application.a01_experiment01_t1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca286ce4-d449-4f13-b4d8-c341451590df" name="Default Changelist" comment="" />
+      <created>1709787642670</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709787642670</updated>
+      <workItem from="1709787644902" duration="640000" />
+      <workItem from="1710139660862" duration="294000" />
+      <workItem from="1710139973751" duration="667000" />
+      <workItem from="1710211867884" duration="2071000" />
+      <workItem from="1710221457290" duration="126000" />
+      <workItem from="1710228755330" duration="1555000" />
+      <workItem from="1710230500163" duration="2110000" />
+      <workItem from="1710251823574" duration="2894000" />
+      <workItem from="1710288065948" duration="164000" />
+      <workItem from="1710293188992" duration="1167000" />
+      <workItem from="1710833135979" duration="2105000" />
+      <workItem from="1710846775631" duration="787000" />
+      <workItem from="1710851853563" duration="51000" />
+      <workItem from="1711203389637" duration="314000" />
+      <workItem from="1711365556694" duration="2553000" />
+      <workItem from="1711524205399" duration="73000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
