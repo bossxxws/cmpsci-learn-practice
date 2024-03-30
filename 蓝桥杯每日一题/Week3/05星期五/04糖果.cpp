@@ -2,7 +2,9 @@
 
 using namespace std;
 
-const int N=100;//看到小数字就要想到暴力搜索了 
+const int N=110;//看到小数字就要想到暴力搜索了 
+
+const int INF=0x3f3f3f3f,M=1<<20;
 
 int m;
 int n,k;
