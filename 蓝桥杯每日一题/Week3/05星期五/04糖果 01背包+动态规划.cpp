@@ -24,7 +24,7 @@ int n,m,k;
 
 vector<int>col[N];//哪些行能包含这一列
 
-int log2[N];//求log以2为底N的对数 
+int log_2[N];//求log以2为底N的对数 
 
 int cnt[N];//每一列有多少选择 
 
@@ -32,7 +32,7 @@ int main()
 {
 	cin>>n>>m>>k;
 	
-	for(int i=0;i<m;i++)log2[1<<i]=i;//口味编号1~m 
+	for(int i=0;i<m;i++)log_2[1<<i]=i;//口味编号1~m 
 	
 	for(int i=0;i<n;i++)//读入每包糖果的数据 
 	{
