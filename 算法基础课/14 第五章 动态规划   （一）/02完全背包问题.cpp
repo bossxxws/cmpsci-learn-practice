@@ -41,7 +41,7 @@ int main()
     
     //优化版
     //f[i,j]=Max(f[i-1,j],**f[i-1,j-v]+w,f[i-1,j-2v]+2w  .....,f[i-1,j-kv]+k*w[i]**)    
-    //f[i-1,j-v]=Max(     **f[i-1,j-v]  ,f[i-1,j-2v]+ w, ..... f[i-1,j-kv]+(k-1)*w[i]**)
+    //f[i,j-v]=Max(     **f[i-1,j-v]  ,f[i-1,j-2v]+ w, ..... f[i-1,j-kv]+(k-1)*w[i]**)
     //星号中的式子只相差一个w,直接替换
     //所以f[i][j]=Max(f[i-1][j],f[i][j-v]+w]
     

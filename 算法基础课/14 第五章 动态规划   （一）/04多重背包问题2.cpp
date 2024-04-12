@@ -17,6 +17,10 @@ int main()
 	
 	
 	int cnt=0;
+	//二进制优化过程
+	//对每个物品进行打包
+	//v和w存的是物品按顺序打包的价值和体积
+	 
 	for(int i=1;i<=n;i++)
 	{
 		int vi,wi,si;
