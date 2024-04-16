@@ -26,6 +26,9 @@ void mergesort(int q[],int l,int r)
 		q[i]=tem[j];
 	}
 }
+
+int cnt;
+
 void quicksort(int q[],int l,int r)
 {
 	if(l>=r)return;
@@ -34,18 +37,31 @@ void quicksort(int q[],int l,int r)
 	int j=r+1;
 	while(i<j)
 	{
-		do i++;while(q[i]<x);
-		do j--;while(q[j]>x);
+		do i++,cnt++;while(q[i]<x);
+		do j--,cnt++;while(q[j]>x);
+		cnt-=2;
 		if(i<j)swap(q[i],q[j]);
 	}
 	quicksort(q,l,j);
 	quicksort(q,j+1,r);
 }
+
 int main()
 {
-	int k[]={2,3,3,4,1,26,3213213,4443,54,1111136543,43};
+	//int k[]={4,1,2,3,5,6,7,8};
+    //int k[]={4,2,1,3,6,5,7,8};
+    
+	//int k[]={8,7,6,5,4,3,2,1};
+	//int k[]={1,2,3,4,5,6,7,8};
+	
 	int n=sizeof(k)/sizeof(k[0]);
 	quicksort(k,0,n-1);
+	
+	//cout<<"int k[]={4,1,2,3,5,6,7,8}的比较次数： "<<cnt<<endl;
+	//cout<<"int k[]={4,2,1,3,6,5,7,8}的比较次数： "<<cnt<<endl;
+	
+	//cout<<"int k[]={8,7,6,5,4,3,2,1}的比较次数： "<<cnt<<endl;
+	//cout<<"int k[]={1,2,3,4,5,6,7,8}的比较次数： "<<cnt<<endl;
 	for (int i = 0; i < n; i++) 
 	{
 		cout << k[i] << " ";

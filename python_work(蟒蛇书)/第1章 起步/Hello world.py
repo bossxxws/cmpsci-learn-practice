@@ -1,3 +1,3 @@
-sick = ("hello pthon world")  
+sick = ("hello python world")  
 print(sick.title())
 	
