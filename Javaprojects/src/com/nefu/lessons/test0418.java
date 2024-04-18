@@ -56,7 +56,9 @@ public class test0418
         System.out.println(b);
 
         System.out.println(ss);
-    }
 
+        //结论：父类的静态函数子类无法重写
+
+    }
 
 }

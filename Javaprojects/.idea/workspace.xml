@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec7d7f80-4db0-46b8-9bc5-92b48459748f" name="Default Changelist" comment="" />
+    <list default="true" id="ec7d7f80-4db0-46b8-9bc5-92b48459748f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nefu/lessons/test0418.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nefu/lessons/test0418.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +76,16 @@
       <updated>1713454095165</updated>
       <workItem from="1713454098199" duration="1087000" />
       <workItem from="1713455375289" duration="500000" />
+      <workItem from="1713455897319" duration="299000" />
     </task>
+    <task id="LOCAL-00001" summary="new">
+      <created>1713455936539</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713455936539</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,5 +103,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
 </project>
