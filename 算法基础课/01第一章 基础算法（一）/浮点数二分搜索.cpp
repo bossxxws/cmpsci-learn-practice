@@ -13,6 +13,7 @@ double binarysearch(double x)
 	}
 	return r;
 }
+
 int main()
 {
 	double n;
