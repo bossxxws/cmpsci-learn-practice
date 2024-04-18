@@ -25,6 +25,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/Git/cmd/git.exe" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -71,6 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713454095165</updated>
       <workItem from="1713454098199" duration="1087000" />
+      <workItem from="1713455375289" duration="500000" />
     </task>
     <servers />
   </component>
@@ -82,7 +84,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
