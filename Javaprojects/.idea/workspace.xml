@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec7d7f80-4db0-46b8-9bc5-92b48459748f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/nefu/lessons/test0418.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nefu/lessons/test0418.java" afterDir="false" />
-    </list>
+    <list default="true" id="ec7d7f80-4db0-46b8-9bc5-92b48459748f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
       <workItem from="1713454098199" duration="1087000" />
       <workItem from="1713455375289" duration="500000" />
       <workItem from="1713455897319" duration="299000" />
-      <workItem from="1713456295493" duration="141000" />
+      <workItem from="1713456295493" duration="182000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1713455936539</created>
@@ -85,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713455936539</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="idea new">
+      <created>1713456470201</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713456470201</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +111,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new" />
-    <option name="LAST_COMMIT_MESSAGE" value="new" />
+    <MESSAGE value="idea new" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea new" />
   </component>
 </project>
