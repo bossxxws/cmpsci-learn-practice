@@ -8,7 +8,8 @@ class People
         System.out.print(4);
     }
 
-    public People(String name) {
+    public People(String name)
+    {
         System.out.print(3);
         this.name = name;
     }
