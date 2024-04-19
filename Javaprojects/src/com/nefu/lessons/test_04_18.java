@@ -33,7 +33,7 @@ class B extends A{
     }
 }
 
-public class test0418
+public class test_04_18
 {
     public static void main(String[] args)
     {
