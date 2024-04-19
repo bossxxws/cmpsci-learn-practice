@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="ca286ce4-d449-4f13-b4d8-c341451590df" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/com/nefu/lessons/test_04_19.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../C_Test/T1/T1/T1/02.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../C_Test/T1/T1/T1/02.cpp" afterDir="false" />
@@ -9,6 +10,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nefu/lessons/a07_experiment02_t3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nefu/lessons/a07_experiment02_t3.java" afterDir="false" />
     </list>
+=======
+    <list default="true" id="ec7d7f80-4db0-46b8-9bc5-92b48459748f" name="Default Changelist" comment="" />
+>>>>>>> b23bfdff9258bf02a79f9dbaa74d986b211f02a8
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +27,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
@@ -33,17 +38,28 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="2dLW3tkhiwQfQ9DKjEsP84VkZoL" />
+=======
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="2fHNZ148SXKIWao0UVZ6GdRL6R7" />
+>>>>>>> b23bfdff9258bf02a79f9dbaa74d986b211f02a8
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="D:/Git/cmd/git.exe" />
+<<<<<<< HEAD
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+=======
+    <property name="nodejs_package_manager_path" value="npm" />
+>>>>>>> b23bfdff9258bf02a79f9dbaa74d986b211f02a8
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -58,6 +74,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.a04_experiment01_t4">
     <configuration name="a04_experiment01_t4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nefu.lessons.a04_experiment01_t4" />
@@ -100,6 +117,11 @@
     </configuration>
     <configuration name="a08_experiment03_t1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nefu.lessons.a08_experiment03_t1" />
+=======
+  <component name="RunManager">
+    <configuration name="test0418" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nefu.lessons.test0418" />
+>>>>>>> b23bfdff9258bf02a79f9dbaa74d986b211f02a8
       <module name="Javaprojects" />
       <extension name="coverage">
         <pattern>
@@ -126,11 +148,15 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Application.test0419" />
         <item itemvalue="Application.a08_experiment03_t1" />
         <item itemvalue="Application.a07_experiment02_t3" />
         <item itemvalue="Application.a05_experiment02_t2" />
         <item itemvalue="Application.a04_experiment01_t4" />
+=======
+        <item itemvalue="Application.test0418" />
+>>>>>>> b23bfdff9258bf02a79f9dbaa74d986b211f02a8
       </list>
     </recent_temporary>
   </component>
@@ -139,10 +165,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ca286ce4-d449-4f13-b4d8-c341451590df" name="Default Changelist" comment="" />
-      <created>1709787642670</created>
+      <changelist id="ec7d7f80-4db0-46b8-9bc5-92b48459748f" name="Default Changelist" comment="" />
+      <created>1713454095165</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1709787642670</updated>
       <workItem from="1709787644902" duration="640000" />
       <workItem from="1710139660862" duration="294000" />
@@ -171,6 +198,29 @@
       <updated>1713504254387</updated>
     </task>
     <option name="localTasksCounter" value="2" />
+=======
+      <updated>1713454095165</updated>
+      <workItem from="1713454098199" duration="1087000" />
+      <workItem from="1713455375289" duration="500000" />
+      <workItem from="1713455897319" duration="299000" />
+      <workItem from="1713456295493" duration="182000" />
+    </task>
+    <task id="LOCAL-00001" summary="new">
+      <created>1713455936539</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713455936539</updated>
+    </task>
+    <task id="LOCAL-00002" summary="idea new">
+      <created>1713456470201</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713456470201</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+>>>>>>> b23bfdff9258bf02a79f9dbaa74d986b211f02a8
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +240,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <MESSAGE value="thinkbook" />
     <option name="LAST_COMMIT_MESSAGE" value="thinkbook" />
+=======
+    <MESSAGE value="new" />
+    <MESSAGE value="idea new" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea new" />
+>>>>>>> b23bfdff9258bf02a79f9dbaa74d986b211f02a8
   </component>
 </project>
