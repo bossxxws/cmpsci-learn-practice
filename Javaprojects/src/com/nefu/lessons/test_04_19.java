@@ -25,7 +25,7 @@ class child extends People
     public child(){ System.out.print(1);}
 }
 
-public class test0419
+public class test_04_19
 {
     public static void main(String[] args)
     {

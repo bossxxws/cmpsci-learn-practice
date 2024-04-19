@@ -24,5 +24,11 @@
     <ClCompile Include="03.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="04.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="05.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

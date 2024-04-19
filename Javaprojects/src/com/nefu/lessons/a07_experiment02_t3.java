@@ -129,7 +129,8 @@ public class a07_experiment02_t3 {
 
             Product product = null;
 
-            switch (productName) {
+            switch (productName)
+            {
                 case "方便面":
                     product = new Product("方便面", 5.5);
                     break;
@@ -153,11 +154,14 @@ public class a07_experiment02_t3 {
 
         Order order = OrderService.addOrder(user, items);
 
-        if (order != null) {
+        if (order != null)
+        {
             System.out.printf("购买商品总额：%.2f\n", order.getTotalCost());
             System.out.printf("用户余额：%.2f\n", user.getBalance());
             System.out.println("地址：" + user.getAddress());
-        } else {
+        }
+        else
+        {
             System.out.println("用户余额不足");
         }
 
