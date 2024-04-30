@@ -1,6 +1,6 @@
-package com.nefu.lessons.experiment_04.resource.DatabaseUtils;
+package com.nefu.lessons.experiment_04.resource;
 
-import com.nefu.lessons.experiment_04.resource.enity.Student;
+import com.nefu.lessons.experiment_04.enity.Student;
 
 import java.util.*;
 

@@ -1,6 +1,6 @@
-package com.nefu.lessons.experiment_04.resource.service;
+package com.nefu.lessons.experiment_04.service;
 
-import com.nefu.lessons.experiment_04.resource.enity.Student;
+import com.nefu.lessons.experiment_04.enity.Student;
 
 import java.util.*;
 

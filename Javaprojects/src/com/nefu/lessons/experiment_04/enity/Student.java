@@ -1,4 +1,4 @@
-package com.nefu.lessons.experiment_04.resource.enity;
+package com.nefu.lessons.experiment_04.enity;
 
 public class Student {
 

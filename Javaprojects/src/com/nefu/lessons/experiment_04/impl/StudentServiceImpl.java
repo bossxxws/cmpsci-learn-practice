@@ -1,10 +1,9 @@
-package com.nefu.lessons.experiment_04.resource.impl;
+package com.nefu.lessons.experiment_04.impl;
 
-import com.nefu.lessons.experiment_04.resource.DatabaseUtils.DatabaseUtils;
-import com.nefu.lessons.experiment_04.resource.enity.Student;
-import com.nefu.lessons.experiment_04.resource.service.StudentService;
+import com.nefu.lessons.experiment_04.resource.DatabaseUtils;
+import com.nefu.lessons.experiment_04.enity.Student;
+import com.nefu.lessons.experiment_04.service.StudentService;
 
-import javax.xml.crypto.Data;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
