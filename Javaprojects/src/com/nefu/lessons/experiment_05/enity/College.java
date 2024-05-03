@@ -1,4 +1,4 @@
-package com.nefu.lessons.experiment_05;
+package com.nefu.lessons.experiment_05.enity;
 
 public class College {
     private String name;

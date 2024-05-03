@@ -1,4 +1,8 @@
-package com.nefu.lessons.experiment_05;
+package com.nefu.lessons.experiment_05.resource;
+
+import com.nefu.lessons.experiment_05.enity.College;
+import com.nefu.lessons.experiment_05.enity.Student;
+import com.nefu.lessons.experiment_05.enity.Teacher;
 
 import java.util.*;
 

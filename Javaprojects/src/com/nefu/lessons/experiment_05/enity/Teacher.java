@@ -1,4 +1,6 @@
-package com.nefu.lessons.experiment_05;
+package com.nefu.lessons.experiment_05.enity;
+
+import com.nefu.lessons.experiment_05.enity.College;
 
 public class Teacher {
     private int number;
