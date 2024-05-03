@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c1f10a1-f809-4153-b549-09badd862c92" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../C_Test/T1/T1/T1/04.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../C_Test/T1/T1/T1/04.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C_Test/T1/T1/T1/05.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../C_Test/T1/T1/T1/05.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C_Test/T1/T1/T1/T1.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../C_Test/T1/T1/T1/T1.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C_Test/T1/T1/T1/T1.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/../C_Test/T1/T1/T1/T1.vcxproj.filters" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nefu/lessons/experiment_04/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nefu/lessons/experiment_04/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nefu/lessons/experiment_04/enity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nefu/lessons/experiment_04/enity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nefu/lessons/experiment_04/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nefu/lessons/experiment_04/impl/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nefu/lessons/experiment_04/resource/DatabaseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nefu/lessons/experiment_04/resource/DatabaseUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nefu/lessons/experiment_04/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nefu/lessons/experiment_04/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nefu/lessons/experiment_04_total/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nefu/lessons/experiment_04_total/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nefu/lessons/multithreading/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nefu/lessons/multithreading/MyThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nefu/lessons/multithreading/Myrun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nefu/lessons/multithreading/Myrun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nefu/lessons/multithreading/test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nefu/lessons/multithreading/test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nefu/lessons/multithreading/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nefu/lessons/multithreading/test2.java" afterDir="false" />
-    </list>
+    <list default="true" id="4c1f10a1-f809-4153-b549-09badd862c92" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +108,7 @@
       <workItem from="1714010221978" duration="10274000" />
       <workItem from="1714195684520" duration="4023000" />
       <workItem from="1714462106878" duration="673000" />
+      <workItem from="1714743121378" duration="2000" />
     </task>
     <servers />
   </component>
