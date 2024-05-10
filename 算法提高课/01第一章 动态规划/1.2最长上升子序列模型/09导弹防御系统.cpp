@@ -4,6 +4,12 @@ using namespace std;
 
 int a[N];
 
+
+int DFS(int depth,)
+{
+	
+}
+
 int main()
 {
 	int n;
@@ -12,11 +18,17 @@ int main()
 	{
 		for(int i=1;i<=n;i++)cin>>a[i];
 		
-		//最长上升子序列和最长下降子序列都可以
-		//要做到所需要系统最少，那就取最长的上升组序列和最长下降子序列集合 
+		//由于情况比较复杂，状态难以表示（不重不漏地表示每一个状态） 
+		//所以说使用DFS爆搜来包含每一种情况 
+		
+		//迭代加深||全局变量 
+		
+		int depth=0;
+		
+		while(!DFS(depth,0,0))depth++; 
 		
 		
-		
+		cout<<depth;
 	} 
 	return 0;
 } 
