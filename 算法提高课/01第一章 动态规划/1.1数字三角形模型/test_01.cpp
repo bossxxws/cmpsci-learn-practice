@@ -2,7 +2,6 @@
 
 using namespace std;
 
-<<<<<<< HEAD
 const int N=100;
 
 int h[N],e[N],ne[N],idx;
@@ -38,21 +37,8 @@ int main()
 	add(2,3);
 	add(3,1);
 	add(2,4);
-	
-//	for(int i=h[2];i!=-1;i=ne[i])
-//	{
-//		int j=e[i];
-//		cout<<j<<endl;
-//	}	
-	
+
+
 	dfs(h[1]);
-	return 0;
-=======
-int main()
-{
-
-    cout<<to_string(111155);
-
     return 0;
->>>>>>> b2a902a0d0326ba78bf336cddf7081c269ce7df1
 }
