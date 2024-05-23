@@ -13,7 +13,8 @@ import java.io.IOException;
 import java.util.TreeMap;
 
 public class NumberSort {
-    public static class NumberSortMapper extends Mapper<LongWritable, Text, LongWritable, Text> {
+    public static class NumberSortMapper extends Mapper<LongWritable, Text, LongWritable, Text>
+    {
         private TreeMap<Long, String> sortedNumbers = new TreeMap<>();
         private LongWritable lineNumber = new LongWritable(1);
 
