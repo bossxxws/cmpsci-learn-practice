@@ -1,13 +1,26 @@
 package com.nefu.lessons.experiment_06_total;
 
+import java.util.*;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 
-class OverWeightException extends Exception {
-    public OverWeightException(String message) {
-        super(message);
+class Container {
+    private int id;
+    private double weight;
+    public Container(int id, double weight) {
+        this.id = id;
+        this.weight = weight;
+    }
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public double getWeight() {
+        return weight;
+    }
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
 }
 class Ship {
@@ -15,22 +28,17 @@ class Ship {
     private String name;
     private double totalWeight;
     private List<Container> containers;
-
-    public Ship(int id, String name, double totalWeight)
-    {
+    public Ship(int id, String name, double totalWeight) {
         this.id = id;
         this.name = name;
         this.totalWeight = totalWeight;
     }
-
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
-
     public String getName() {
         return name;
     }
@@ -55,46 +63,38 @@ class Ship {
         this.totalWeight = totalWeight;
     }
 }
-class Container {
-    private int id;
-    private double weight;
 
-    public Container(int id, double weight) {
-        this.id = id;
-        this.weight = weight;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public double getWeight() {
-        return weight;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
+class OverWeightException extends Exception {
+    public OverWeightException(String message) {
+        super(message);
     }
 }
-class LoadService {
 
+class LoadService {
     public static Ship loadShip(Ship ship, List<Container> containers) throws OverWeightException {
         double totalWeight = 0;
+    /*    if(ship.getContainers()!=null){
+
+            for (Container c : ship.getContainers()) {
+
+                totalWeight += c.getWeight();
+
+            }
+
+            System.out.println(totalWeight+"------"+ship.getContainers().size());
+
+        }*/
         for (Container c : containers) {
             totalWeight += c.getWeight();
         }
         double diff = totalWeight - ship.getTotalWeight();
         if (diff > 0) {
-            throw new OverWeightException("����ID��" + ship.getId() + "���������ƣ�" + ship.getName() + "�����أ�" + diff);
+            throw new OverWeightException("货船ID：" + ship.getId() + "；货船名称：" + ship.getName() + "；超重：" + diff);
         }
+        //  if(ship.getContainers()!=null){containers.addAll(ship.getContainers());}
         ship.setContainers(containers);
         return ship;
     }
-
 }
 
 public class Test {
@@ -103,30 +103,30 @@ public class Test {
     }
 
     private static void testLoadShip() {
-        Ship ship = new Ship(1, "�����", 1000);
-        List<Container> containers = new ArrayList<>();
-        containers.add(new Container(1001, 564));
-        containers.add(new Container(2547, 1280));
 
-        try {
-            Ship s2 = LoadService.loadShip(ship, containers);
-            System.out.println(s2.getName());
-        } catch (OverWeightException e) {
-            System.out.println(e.getMessage());
-        }finally{
-        	System.out.println("����");
+        Scanner scanner = new Scanner(System.in);
+        Ship ship = new Ship(scanner.nextInt(), scanner.next(), scanner.nextDouble());
+        List<Container> containers = new ArrayList<>();
+        int num1 = scanner.nextInt();
+        for (int j = 1; j <= num1; j++) {
+            int num2 = scanner.nextInt();
+            for (int i = 0; i < num2; i++) {
+                containers.add(new Container(scanner.nextInt(), scanner.nextDouble()));
+            }
+            try {
+                Ship s2 = LoadService.loadShip(ship, containers);
+            } catch (OverWeightException e) {
+                System.out.println(e.getMessage());
+            } finally {
+                double totalWeight = 0;
+                if (ship.getContainers() != null) {
+                    for (Container c : ship.getContainers()) {
+                        totalWeight += c.getWeight();
+                    }
+                }
+                System.out.println("货船ID：" + ship.getId() + "；货船名称：" + ship.getName() + "；第" + j + "次货物装载完毕");
+            }
         }
-//        int a;
-//        Scanner s = new Scanner(System.in);
-//
-//        a=s.nextInt();
-//
-//        if(a==10001)System.out.println("货船ID：10001；货船名称：东风号；第1次货物装载完毕\n" +
-//
-//                "货船ID：10001；货船名称：东风号；超重：68.0\n" +
-//
-//                "货船ID：10001；货船名称：东风号；第2次货物装载完毕");
-//        else System.out.println("货船ID：10002；货船名称：海南号；第1次货物装载完毕\n" +
-//                "货船ID：10002；货船名称：海南号；第2次货物装载完毕");
+        scanner.close();
     }
 }

@@ -10,7 +10,25 @@ int g[N][M];
 
 int f[N][M];
 
+int path[N];
+int cnt;
 
+void dfs(int i,int j)
+{
+    if(i==0)return ;
+    for(int a=0;a<=j;a++)
+    {
+
+        if(f[i-1][j-a]+g[i][a]==f[i][j])
+        {
+
+            path[cnt++]=a;
+            dfs(i-1,j-a);
+            return ;
+        }
+    }
+
+}
 
 int main()
 {
@@ -39,5 +57,12 @@ int main()
 
     cout<<f[n][m]<<endl;
 
+    //find path
+    dfs(n,m);
 
+    //因为是从最终状态开始find拓扑排序的
+    //所以cnt==0的时候存储的是最终的状态
+    //最终path要倒序输出
+    for(int i=cnt-1,id=1;i>=0;id++,i--)
+            cout<<id<<" "<<path[i]<<endl;
 }
