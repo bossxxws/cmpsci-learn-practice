@@ -1,6 +1,7 @@
 package com.nefu.lessons.experiment_05_total;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 class College {
     private String name;
@@ -139,6 +140,40 @@ class DatabaseUtils {
 
 }
 
+class WenxsTest
+{
+
+    public String getCourseName(List<Student> student, int sNumber){
+        //流操作
+        String[] results=new String[2];
+        results[0]="未知学院";
+//        student.stream()
+//               .filter(s-> s.getNumber()==sNumber)
+//               .map(Student::getTeacher)
+//               .map(Teacher::getCollege)
+//               .map(College::getName)
+//               .forEach(name->
+//               {
+//                   results[0] = name;
+//               });
+//                return results[0];
+        student.stream()
+                .filter(s-> s!= null && s.getNumber()==sNumber)
+                .collect(Collectors.toList())
+                .forEach(
+                        s->{
+                            results[0]=Optional.ofNullable(s)
+                                    .map(Student::getTeacher)
+                                    .map(Teacher::getCollege)
+                                    .map(College::getName)
+                                    .orElse("未知学院");
+                        });
+        return results[0];
+
+    }
+
+
+}
 
 public class Test
 {
@@ -273,6 +308,8 @@ public class Test
                 .orElse("未知学院");
 
         System.out.println(collegeName);
+        WenxsTest w=new WenxsTest();
+        System.out.println(w.getCourseName(DatabaseUtils.getStudents(),202301));
     }
 
 }
