@@ -63,7 +63,7 @@ class Race implements Runnable
     }
 }
 
-public class guiandtuTest
+public class Turtle_and_rabbit
 {
     public static void main(String[] args) {
         String s1="乌龟",s2="兔子";

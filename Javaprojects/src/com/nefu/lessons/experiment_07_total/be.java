@@ -22,7 +22,7 @@ class Bridge implements Runnable {
 
 }
 
-public class b {
+public class be{
 
     public static void main(String[] args){
         Bridge bridge = new Bridge();
