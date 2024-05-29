@@ -7,7 +7,7 @@ def distance(adj_list, s):
     queue = deque([s])
 
     while queue:
-        u = queue.popleft()
+        u = queue.pop()
         for v in adj_list[u]:
             if distances[v] == float('inf'):
                 distances[v] = distances[u] + 1
