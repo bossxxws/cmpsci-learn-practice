@@ -7,7 +7,7 @@ def is_reachable(adj_matrix, s, d):
     q=[[]*100]*100
     tt=-1
     hh=0
-
+    
     tt+=1#++tt
     q[tt]=[s]
 
