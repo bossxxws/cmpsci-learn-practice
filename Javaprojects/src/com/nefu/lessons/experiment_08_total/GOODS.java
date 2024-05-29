@@ -23,7 +23,7 @@ public class GOODS {
                 "白日依山尽\r\n" +
                         "黄河入海流\r\n" +
                         "欲穷千里目\r\n" +
-                        "更上一层楼\r\n";
+                        "更上一层楼\r\n"+"烧火董前";
          writeToFile(fileName, str);
         //  writeToFile2(fileName, str);
 
@@ -97,7 +97,8 @@ public class GOODS {
         try {
             Files.write(Paths.get(fileName), buff);
 
-        } catch (IOException e) {
+        } catch (IOException e)
+        {
             e.printStackTrace();
         }
     }
