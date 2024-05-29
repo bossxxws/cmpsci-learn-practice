@@ -1,17 +1,24 @@
-from collections import deque
-
 import copy
 
 def is_reachable(adj_matrix, s, d):
     n = len(adj_matrix)
     visited = [False] * n
-    queue = deque([[s]])
+
+    q=[[]*100]*100
+    tt=-1
+    hh=0
+
+    tt+=1#++tt
+    q[tt]=[s]
+
     visited[s] = True
 
-    while queue:
+    while hh<=tt:
         #print(queue)
-        path = queue.pop()
-        
+
+        path=q[hh]
+        hh+=1
+
         current = path[-1]
         #print(path)
         if current == d:
@@ -25,7 +32,8 @@ def is_reachable(adj_matrix, s, d):
 
                 t.append(neighbor)
     
-                queue.append(t)
+                tt+=1
+                q[tt]=t
 
     return False
 	
