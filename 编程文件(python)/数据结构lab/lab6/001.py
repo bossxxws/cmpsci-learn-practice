@@ -1,4 +1,6 @@
 def dfs(adj_matrix):
+    if adj_matrix==None:
+        return [],[],[],[]
     n = len(adj_matrix)
     visited = [False] * n
     parent = [[]*n]*n  # Track the parent of each node in the DFS tree
