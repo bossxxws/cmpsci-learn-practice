@@ -1,5 +1,3 @@
-from collections import deque
-
 def distance(adj_list, s):
     n = len(adj_list)
     distances = [float('inf')] * n
