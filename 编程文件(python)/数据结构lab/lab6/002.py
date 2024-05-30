@@ -37,13 +37,13 @@ def is_reachable(adj_matrix, s, d):
 
     return False
 	
-# adj_matrix = [
-#     [0, 0, 1, 0, 1, 1],
-#     [1, 0, 0, 0, 0, 0],
-#     [0, 1, 0, 0, 1, 0],
-#     [1, 0, 0, 0, 1, 0],
-#     [0, 0, 0, 0, 0, 0],
-#     [1, 0, 0, 0, 0, 0]
-# ]
-# print(is_reachable(adj_matrix, 0, 3))
-# print(is_reachable(adj_matrix, 1, 2))
+adj_matrix = [
+    [0, 0, 1, 0, 1, 1],
+    [1, 0, 0, 0, 0, 0],
+    [0, 1, 0, 0, 1, 0],
+    [1, 0, 0, 0, 1, 0],
+    [0, 0, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 0]
+]
+print(is_reachable(adj_matrix, 0, 3))
+print(is_reachable(adj_matrix, 1, 2))
