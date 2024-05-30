@@ -4,6 +4,7 @@ using namespace std;
 
 unordered_map<int,int>s;
 unordered_set<int>s1;
+
 int main()
 {
     auto a=1;
