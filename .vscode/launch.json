@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Lenovo/AppData/Local/Temp/Rar$DIa19956.33244",
-      "program": "c:/Users/Lenovo/AppData/Local/Temp/Rar$DIa19956.33244/build/Debug/outDebug",
+      "cwd": "d:/AFiles/cmpsci-learn-practice",
+      "program": "d:/AFiles/cmpsci-learn-practice/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
