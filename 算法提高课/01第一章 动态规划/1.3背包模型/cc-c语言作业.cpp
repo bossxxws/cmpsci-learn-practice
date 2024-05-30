@@ -15,14 +15,14 @@ struct matrix
 
 typedef struct matrix Matrix;
 
-//½á¹û´æÔÚ½á¹¹ÌåÀï
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú½á¹¹ï¿½ï¿½ï¿½ï¿½
  
 int main(int argc, char *argv[]) 
 {
 	FILE *file1, *file2, *file3;
 	int i = 0;
-	int filter[filterSize][filterSize];//¹ýÂË×é 
-	Matrix **data;//½á¹¹Ìå 
+	int filter[filterSize][filterSize];//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+	Matrix **data;//ï¿½á¹¹ï¿½ï¿½ 
 	int j, k, l, m;
 	int val;
 	int iter;
@@ -50,14 +50,14 @@ int main(int argc, char *argv[])
 		//return 1;
 	}
 	
-	//malloc×Ô¶¯·ÖÅäÄÚ´æËùÐèµÄ¿Õ¼ä 
+	//mallocï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Õ¼ï¿½ 
 	data = (Matrix **)malloc(sizeof(Matrix *) * matrixSize);
 	
-	//dataµÄo´æ´¢Êý¾Ý
-	//dataµÄn´æ´¢Êä³ö¾ØÕó 
+	//dataï¿½ï¿½oï¿½æ´¢ï¿½ï¿½ï¿½ï¿½
+	//dataï¿½ï¿½nï¿½æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 	for (i = 0; i < matrixSize; i++) 
 	{
-		data[i] = (Matrix *)malloc(sizeof(Matrix) * matrixSize);//¶¯Ì¬·ÖÅä´æ´¢¿Õ¼ä 
+		data[i] = (Matrix *)malloc(sizeof(Matrix) * matrixSize);//ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½æ´¢ï¿½Õ¼ï¿½ 
 	}
 	
 	for(int i=0;i<zhang;i++)
