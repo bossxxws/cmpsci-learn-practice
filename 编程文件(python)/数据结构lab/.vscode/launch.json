@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "HelloWorld",
+      "request": "launch",
+      "mainClass": "lab6.HelloWorld",
+      "projectName": "数据结构lab_c45ac3f8"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
