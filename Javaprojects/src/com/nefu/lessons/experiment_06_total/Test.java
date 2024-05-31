@@ -1,6 +1,8 @@
 package com.nefu.lessons.experiment_06_total;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 
 class Container {
@@ -114,19 +116,21 @@ public class Test {
                 containers.add(new Container(scanner.nextInt(), scanner.nextDouble()));
             }
             try {
-                Ship s2 = LoadService.loadShip(ship, containers);
+                LoadService.loadShip(ship, containers);
             } catch (OverWeightException e) {
                 System.out.println(e.getMessage());
             } finally {
                 double totalWeight = 0;
-                if (ship.getContainers() != null) {
+                if (ship.getContainers() != null) {           //不是null代表装载完毕，是null就代表超重了
                     for (Container c : ship.getContainers()) {
                         totalWeight += c.getWeight();
                     }
+                    System.out.println(ship.getName()+"装载没有超重，装载成功，装载了： "+totalWeight);
                 }
                 System.out.println("货船ID：" + ship.getId() + "；货船名称：" + ship.getName() + "；第" + j + "次货物装载完毕");
             }
         }
         scanner.close();
+        
     }
 }
