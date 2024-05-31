@@ -6,7 +6,7 @@ class Race implements Runnable
 {
     private final static int Zhongdian=10000;
     private volatile int len1=0,len2=0;
-    String s1,s2;
+        String s1,s2;
     public Race(String s1,String s2){
         this.s1=s1;
         this.s2=s2;

@@ -1,10 +1,10 @@
 package com.nefu.lessons.experiment_04_total;
 
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 
 interface StudentService {
