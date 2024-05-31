@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h> 
 //30分的选择
 //20分的判断
 //写程序 50分 没有超过上课难度
@@ -16,9 +16,15 @@
 
 //实验四也是重点：肯定会有编程题
 //过滤、映射。。。。。。。
+const int N=1003;
+
+int f[N][N];
+
 int main()
 {
-
-
-    return 0;
+	
+	
+	
+	
+	return 0;
 }

@@ -11,7 +11,7 @@ class Bridge implements Runnable {
         synchronized (this) {
             System.out.println(Thread.currentThread().getName() + "开始走独木桥");
             try {
-                Thread.sleep(5000);//需要五秒
+                Thread.sleep(50);//需要五秒,这里为了快写成了0.05s
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
