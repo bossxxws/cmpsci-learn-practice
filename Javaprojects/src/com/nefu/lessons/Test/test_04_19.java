@@ -1,4 +1,4 @@
-package com.nefu.lessons;
+package com.nefu.lessons.Test;
 
 class People
 {

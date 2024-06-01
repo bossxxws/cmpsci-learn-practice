@@ -1,4 +1,4 @@
-package com.nefu.lessons;
+package com.nefu.lessons.Test;
 
 import java.util.ArrayList;
 
@@ -9,5 +9,6 @@ public class test_05_23
         list.add(2);
         list.add("yes");
         System.out.println(list);
+        
     }
 }
