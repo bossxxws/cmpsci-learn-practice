@@ -1,13 +1,15 @@
 package com.nefu.lessons.experiment_08_total;
 
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.Comparator;
-import java.util.Objects;
 import java.util.stream.Stream;
 
 public class GOODS {
@@ -113,7 +115,6 @@ public class GOODS {
      */
     private static void copyByIO(String sourceFile, String targetFile) throws IOException {
         byte[] buff = new byte[8];
-        int num=0;
         int len;
         try( InputStream inputStream = new FileInputStream(sourceFile);
              OutputStream outputStream = new FileOutputStream(targetFile);
