@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/AFiles/cmpsci-learn-practice",
-      "program": "d:/AFiles/cmpsci-learn-practice/build/Debug/outDebug",
+      "cwd": "d:/AFiles/cmpsci-learn-practice/WebDevelopment/01html入门",
+      "program": "d:/AFiles/cmpsci-learn-practice/WebDevelopment/01html入门/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
