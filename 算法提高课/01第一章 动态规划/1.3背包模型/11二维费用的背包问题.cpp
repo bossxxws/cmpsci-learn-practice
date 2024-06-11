@@ -1,44 +1,45 @@
-#include<bits/stdc++.h>
-//ä¹Ÿè¿˜æ˜¯01èƒŒåŒ…é—®é¢˜ï¼Œåªä¸è¿‡æœ‰äºŒä¸ªé™åˆ¶ç»´åº¦ï¼Œä¸€ä¸ªä»·å€¼ç»´åº¦
+#include <bits/stdc++.h>
+// Ò²»¹ÊÇ01±³°üÎÊÌâ£¬Ö»²»¹ıÓĞ¶ş¸öÏŞÖÆÎ¬¶È£¬Ò»¸ö¼ÛÖµÎ¬¶È
 using namespace std;
 
-//vå’Œmçš„é™åˆ¶
-//ç›®æ ‡ï¼šä½¿å¾—wæœ€å¤§
+// vºÍmµÄÏŞÖÆ
+// Ä¿±ê£ºÊ¹µÃw×î´ó
 
-//f[i][j][k]è¡¨ç¤ºé€‰å‰iä¸ªç‰©å“ï¼Œä½“ç§¯ä¸è¶…è¿‡jï¼Œé‡é‡ä¸è¶…è¿‡kçš„ä»·å€¼çš„çŠ¶æ€çš„é›†åˆ
-//å±æ€§ï¼šæœ€å¤§å€¼
+// f[i][j][k]±íÊ¾Ñ¡Ç°i¸öÎïÆ·£¬Ìå»ı²»³¬¹ıj£¬ÖØÁ¿²»³¬¹ıkµÄ¼ÛÖµµÄ×´Ì¬µÄ¼¯ºÏ
+// ÊôĞÔ£º×î´óÖµ
 
-const int N=1003;
+const int N = 1003;
 
-const int M=103;
+const int M = 103;
 
-int v[N],m[N];//ä½“ç§¯å’Œé‡é‡
+int v[N], m[N]; // Ìå»ıºÍÖØÁ¿
 
-int w[N];//ä»·å€¼
+int w[N]; // ¼ÛÖµ
 
 int f[N][M][M];
 
 int main()
 {
-    int n,V,M;
-    cin>>n>>V>>M;
+    int n, V, M;
+    cin >> n >> V >> M;
 
-    for(int i=1;i<=n;i++)
+    for (int i = 1; i <= n; i++)
     {
-        scanf("%d%d%d",&v[i],&m[i],&w[i]);
+        scanf("%d%d%d", &v[i], &m[i], &w[i]);
     }
 
-    for(int i=1;i<=n;i++)//æšä¸¾ç¬¬iä¸ªç‰©å“
+    for (int i = 1; i <= n; i++) // Ã¶¾ÙµÚi¸öÎïÆ·
     {
-        for(int j=0;j<=V;j++)
+        for (int j = 0; j <= V; j++)
         {
-            for(int k=0;k<=M;k++)
+            for (int k = 0; k <= M; k++)
             {
-                f[i][j][k]=max(f[i][j][k],f[i-1][j][k]);
-                if(j>=v[i] && k>=m[i])f[i][j][k]=max(f[i][j][k],f[i-1][j-v[i]][k-m[i]]+w[i]);
+                f[i][j][k] = max(f[i][j][k], f[i - 1][j][k]);
+                if (j >= v[i] && k >= m[i])
+                    f[i][j][k] = max(f[i][j][k], f[i - 1][j - v[i]][k - m[i]] + w[i]);
             }
         }
     }
-    cout<<f[n][V][M];
+    cout << f[n][V][M];
     return 0;
 }
