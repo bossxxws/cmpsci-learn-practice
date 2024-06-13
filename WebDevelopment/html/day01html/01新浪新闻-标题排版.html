@@ -41,15 +41,28 @@
       }
 
       p {
-        text-indent: 30px;
+        text-indent: 30px; /* 缩进 */
         line-height: 2; /* 设置行高 */
+      }
+
+      #plast {
+        text-align: right; /* 对齐方式 */
+      }
+      
+      #center {
+        width:65%;
+        /* margin:0% 17.5% 0% 17.5%; */
+
+        /* 简化的写法 */
+        margin: 0 auto;/* 自动计算外边距 */
       }
     </style>
     <link rel="stylesheet" href="css/news.css" />
   </head>
 
   <body>
-    <!--
+    <div id="center">
+      <!--
     img标签：
         src：图片资源路径
         width：宽度(px,像素；%，相对于父元素的百分比)
@@ -62,114 +75,122 @@
         相对路径：（推荐）
             ../上一级目录（和linux一样）
      -->
-    <img src="img/pic.jpg" height="300px" /><span id="tit">落日长河</span>
-    <!-- <img src="../01html入门/1.jpg" alt=""> -->
+      <img src="img/pic.jpg" height="300px" /><span id="tit">落日长河</span>
+      <!-- <img src="../01html入门/1.jpg" alt=""> -->
 
-    <!-- 可以看到图片的宽度占网页的百分之八十 -->
-    <h1>练习截图</h1>
-    <!-- 两个分割线 -->
-    <hr />
-    2024_06_08
-    <hr />
-    <img src="img/屏幕截图 2024-06-08 211431.png" width="80%" />
-    <!-- CSS样式控制 -->
-    <!--
+      <!-- 可以看到图片的宽度占网页的百分之八十 -->
+      <h1>练习截图</h1>
+      <!-- 两个分割线 -->
+      <hr />
+      2024_06_08
+      <hr />
+      <img src="img/屏幕截图 2024-06-08 211431.png" width="80%" />
+      <!-- CSS样式控制 -->
+      <!--
         CSS引入方式：
             行内样式：写在标签的style属性中（不推荐）
             内嵌样式：写在style标签中（可以写在页面任何位置，但通常约定写在head标签中）
             外联样式：写在一个单独的css文件中（需要通过link标签在网页中引入）
     -->
 
-    <!-- 方式一：行内样式 -->
-    <!-- 全局变量服从于局部变量，所以这里是红色 -->
-    <h1 style="color: red">严于律己</h1>
+      <!-- 方式一：行内样式 -->
+      <!-- 全局变量服从于局部变量，所以这里是红色 -->
+      <h1 style="color: red">严于律己</h1>
 
-    <!-- 方式二：内嵌样式 -->
-    <!-- 元素选择器 -->
-    <h1>严于律己</h1>
+      <!-- 方式二：内嵌样式 -->
+      <!-- 元素选择器 -->
+      <h1>严于律己</h1>
 
-    <!-- 方式三：外联样式 -->
-    <h2>严于律己</h2>
+      <!-- 方式三：外联样式 -->
+      <h2>严于律己</h2>
 
-    <!-- 颜色的表示方法：
+      <!-- 颜色的表示方法：
       关键字：red、green、blue
       rgb表示法：rgb(0~255,0~255,0~255)（三原色）
       十六进制表示法：#开头，将rgb中的数字转化为十六进制数字，两位即可表示一个数，例如：#000000，#cccccc 简写：#000，#ccc
     -->
 
-    <h1 style="color: rgba(21, 10, 184, 0.945)">曹植</h1>
-    <h1 style="color: rgb(0, 0, 0)">走马行酒醴</h1>
-    <h1 style="color: #000">驱车布肉鱼</h1>
-    <!-- CSS选择器 -->
+      <h1 style="color: rgba(21, 10, 184, 0.945)">曹植</h1>
+      <h1 style="color: rgb(0, 0, 0)">走马行酒醴</h1>
+      <h1 style="color: #000">驱车布肉鱼</h1>
+      <!-- CSS选择器 -->
 
-    <!-- id选择器 -->
+      <!-- id选择器 -->
 
-    <!-- id选择器优先级最高 -->
-    <!-- 通过id选择器指定唯一的元素 -->
-    <span id="time">2024年06月09日 13:30</span> <span>央视网</span>
+      <!-- id选择器优先级最高 -->
+      <!-- 通过id选择器指定唯一的元素 -->
+      <span id="time">2024年06月09日 13:30</span> <span>央视网</span>
 
-    <!-- 类选择器优先级第二 -->
+      <!-- 类选择器优先级第二 -->
 
-    <span class="cls">2024年06月09日 13:31</span> <span>央视网</span>
+      <span class="cls">2024年06月09日 13:31</span> <span>央视网</span>
 
-    <!-- 元素选择器优先级最低 -->
+      <!-- 元素选择器优先级最低 -->
 
-    <span>2024年06月09日 13:31</span> <span>央视网</span>
+      <span>2024年06月09日 13:31</span> <span>央视网</span>
 
-    <!-- 目标指定self代表着将要在当前页面打开 -->
-    <a
-      href="https://www.bilibili.com/video/BV1m84y1w7Tb?p=9&vd_source=6d91af92d5f4907f81900c0df29e771c"
-      target="_self"
-      >bilibili网站web开发教程（在原网页打开）</a
-    >
+      <!-- 目标指定self代表着将要在当前页面打开 -->
+      <a
+        href="https://www.bilibili.com/video/BV1m84y1w7Tb?p=9&vd_source=6d91af92d5f4907f81900c0df29e771c"
+        target="_self"
+        >bilibili网站web开发教程（在原网页打开）</a
+      >
 
-    <a
-      href="https://www.bilibili.com/video/BV1m84y1w7Tb?p=9&vd_source=6d91af92d5f4907f81900c0df29e771c"
-      target="_blank"
-      id="tit"
-      >bilibili网站web开发教程（在新网页打开）</a
-    >
+      <a
+        href="https://www.bilibili.com/video/BV1m84y1w7Tb?p=9&vd_source=6d91af92d5f4907f81900c0df29e771c"
+        target="_blank"
+        id="tit"
+        >bilibili网站web开发教程（在新网页打开）</a
+      >
 
-    <!-- 视频 -->
+      <!-- 视频 -->
 
-    <!-- 如果属性名和属性值一样，可以直接省略掉属性值  -->
+      <!-- 如果属性名和属性值一样，可以直接省略掉属性值  -->
 
-    <!-- br是换行符 -->
-    <br />
+      <!-- br是换行符 -->
+      <br />
 
-    <span>早上努力学习</span>
+      <span>早上努力学习</span>
 
-    <br />
-    <video
-      src="video/78b61ec8a4ed1613b4bd81adc9fa7650.mp4"
-      controls="controls"
-      width="950"
-    ></video
-    ><!-- 这里选择不省略 -->
+      <br />
+      <video
+        src="video/78b61ec8a4ed1613b4bd81adc9fa7650.mp4"
+        controls="controls"
+        width="950"
+      ></video
+      ><!-- 这里选择不省略 -->
 
-    <!-- 音频 -->
+      <!-- 音频 -->
 
-    <br />
+      <br />
 
-    <span>xwm</span>
-    <br />
-    <audio src="audio/奥乌木.mp3" controls></audio>
+      <span>xwm</span>
+      <br />
+      <audio src="audio/奥乌木.mp3" controls></audio>
 
-    <!-- p是段落标签 -->
+      <!-- p是段落标签 -->
 
-    <p>这是一个段落</p>
+      <p>这是一个段落</p>
 
-    <!-- 实现首行缩进的效果要依赖css样式 -->
+      <!-- 实现首行缩进的效果要依赖css样式 -->
 
-    <p>这是一个段落</p>
+      <p>这是一个段落</p>
 
-    <!-- b标签仅仅是加粗 -->
-    <!-- strong也是加粗，但具有强调的意义 -->
+      <!-- b标签仅仅是加粗 -->
+      <!-- strong也是加粗，但具有强调的意义 -->
 
-    <b>p标签</b>
+      <b>p标签</b>
 
-    <br />
+      <br />
 
-    <strong>strong标签</strong>
+      <strong>strong标签</strong>
+
+      <!-- 对齐方式 -->
+
+      <p id="plast">责任编辑：&nbsp;&nbsp;张奥</p>
+      <!-- id定义向对齐 -->
+      <!-- 在html中，多少个空格都会被当成一个空格 -->
+      <!-- 要想实现多个空格，要用&nbsp -->
+    </div>
   </body>
 </html>
