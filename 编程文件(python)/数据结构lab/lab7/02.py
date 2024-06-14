@@ -44,31 +44,44 @@ from collections import deque
 
 def schedule(dep):
     N = len(dep)
-    m={}
-    indegree = [0]*N
+    m = [[] for _ in range(N)]
+    outdegree = [0]*N
     for i in range(N):
         for j in dep[i]:
-            indegree[i] += 1#记录每个点的入度
-            m[j]=i 
+            outdegree[i] += 1#记录每个点的度
 
-    queue = deque([i for i in range(N) if indegree[i] == 0])
+            m[j]+=[i]#记录j的父亲
+            # print(m[j])
+
+    queue = deque([i for i in range(N) if outdegree[i] == 0])
     res = []
+    # print(m)
     while queue:
         l=sorted(list(queue))
-        print(l)
+ 
+        # print(l)
         queue=deque(l)
-        node = queue.pop()
-        res.append(node)
-        for i in dep[node]:
-            indegree[i] -= 1
-            if indegree[i] == 0:
+        node = queue.popleft()
+        res+=[node]
+        for i in m[node]:#遍历node的父亲，把他们的出度都减去一
+            outdegree[i] -= 1
+            if outdegree[i] == 0:
                 queue.append(i)
 
     if len(res) == N:
-        return list(reversed(res))
+        return res
     else:
         return None
 
+	
+# dep = [[],[],[0,1]]
+# print(schedule(dep))
+# [0, 1, 2]
 
-dep = [[],[0],[0],[2,5],[1],[1],[3,4,5]]
-print(schedule(dep))
+# dep = [[],[0],[0],[2,5],[1],[1],[3,4,5]]
+# print(schedule(dep))
+# [0, 1, 2, 4, 5, 3, 6]
+
+# dep = [[1,2],[3,5],[3],[6,7,8],[5],[6,9],[8],[8],[9],[]]
+# print(schedule(dep))
+# [9, 8, 6, 5, 4, 7, 3, 1, 2, 0]
