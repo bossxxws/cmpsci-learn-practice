@@ -49,7 +49,7 @@ def schedule(dep):
     for i in range(N):
         for j in dep[i]:
             indegree[i] += 1#记录每个点的入度
-            m[j]=i 
+            m[j]=m[j]+[i] 
 
     queue = deque([i for i in range(N) if indegree[i] == 0])
     res = []
