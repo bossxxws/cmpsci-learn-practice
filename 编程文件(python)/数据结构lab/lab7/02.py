@@ -44,15 +44,20 @@ from collections import deque
 
 def schedule(dep):
     N = len(dep)
+    m={}
     indegree = [0]*N
     for i in range(N):
         for j in dep[i]:
-            indegree[j] += 1
+            indegree[i] += 1#记录每个点的入度
+            m[j].append(i)    
 
     queue = deque([i for i in range(N) if indegree[i] == 0])
     res = []
     while queue:
-        node = queue.popleft()
+        l=sorted(list(queue))
+        print(l)
+        queue=deque(l)
+        node = queue.pop()
         res.append(node)
         for i in dep[node]:
             indegree[i] -= 1
@@ -60,6 +65,10 @@ def schedule(dep):
                 queue.append(i)
 
     if len(res) == N:
-        return res
+        return list(reversed(res))
     else:
         return None
+
+
+dep = [[],[0],[0],[2,5],[1],[1],[3,4,5]]
+print(schedule(dep))
