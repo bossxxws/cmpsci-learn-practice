@@ -1,0 +1,74 @@
+class Node:
+    def __init__(self, init_data):
+        self.data = init_data
+
+    def get_data(self):
+        return self.data
+
+    def set_data(self, new_data):
+        self.data = new_data
+
+
+class minBHeap:
+    def __init__(self):
+        self.a = []
+
+    def is_empty(self):
+        return len(self.a) == 0
+
+    def Insert(self, item):
+        item = Node(item)
+        self.a.append(item)
+        length = len(self.a)
+        i = length - 1
+        while i >= 0:
+            j = int((i + 1) / 2 - 1)
+            if self.a[i].get_data() < self.a[j].get_data():
+                self.a[i], self.a[j] = self.a[j], self.a[i]
+            else:
+                break
+            i = j
+
+    def FindMin(self):
+        return self.a[0].get_data()
+
+    def Delete(self):
+        self.a[-1], self.a[0] = self.a[0], self.a[-1]
+        self.a.pop()
+        length = len(self.a)
+        i = 0
+        while i <= length - 1:
+            j = 2 * i + 1
+            if j > length - 1:
+                break
+            if j + 1 <= length - 1 and self.a[j + 1].get_data() < self.a[j].get_data():
+                j += 1
+            if self.a[j].get_data() < self.a[i].get_data():
+                self.a[i], self.a[j] = self.a[j], self.a[i]
+                i = j
+            else:
+                break
+
+    def Sort(self):
+        lst = []
+        length = len(self.a)
+        for i in range(length):
+            lst = [Node(self.FindMin())] + lst
+            self.Delete()
+        self.a = lst
+
+    def __str__(self):
+        outstr = "Heap (Size: " + str(len(self.a)) + ")\n"
+        level = 0;
+        outstr = outstr + "Level " + str(level) + ": "
+        for i in range(len(self.a)):
+            if len(self.a) == 1:
+                outstr = outstr + str(self.a[i].get_data())
+            elif (i == (2 ** (level + 1) - 2)) and (i != len(self.a) - 1):
+                outstr = outstr + str(self.a[i].get_data()) + "\n"
+                level = level + 1
+            elif i == (2 ** level) - 1:
+                outstr = outstr + "Level " + str(level) + ": " + str(self.a[i].get_data()) + " "
+            else:
+                outstr = outstr + str(self.a[i].get_data()) + " "
+        return (outstr)
