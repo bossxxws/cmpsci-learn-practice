@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6233fb7f-1680-434e-adf8-7c508057fdb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Javaprojects/src/com/nefu/lessons/test_06_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javaprojects/src/com/nefu/lessons/test_05_23.java" beforeDir="false" afterPath="$PROJECT_DIR$/Javaprojects/src/com/nefu/lessons/test_05_23.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法提高课/01第一章 动态规划/1.5状态压缩dp/03炮兵阵地.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/算法提高课/01第一章 动态规划/1.5状态压缩dp/03炮兵阵地.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法提高课/01第一章 动态规划/1.5状态压缩dp/03炮兵阵地.exe" beforeDir="false" afterPath="$PROJECT_DIR$/算法提高课/01第一章 动态规划/1.5状态压缩dp/03炮兵阵地.exe" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +23,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Javaprojects" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -51,6 +50,8 @@
       <workItem from="1709787223112" duration="17000" />
       <workItem from="1717228943296" duration="24000" />
       <workItem from="1717230624621" duration="75000" />
+      <workItem from="1719104390674" duration="219000" />
+      <workItem from="1719104623452" duration="52000" />
     </task>
     <servers />
   </component>
