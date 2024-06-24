@@ -17,7 +17,7 @@ int main() {
 	y=z[2];
 	z[0]=*(x+1);
 	cout<<"---"<<endl;
-	cout<<x[1]<<" "<<*(x+1)<<endl;
+	cout<<*z<<" "<<z[0]<<endl;
 	cout<<"---"<<endl;
 
 }
