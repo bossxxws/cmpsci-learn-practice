@@ -42,9 +42,7 @@ class Student implements Serializable {
 
     @Override
     public String toString() {
-        return
-                "学号：" + id + ", 姓名：" + name + ", 成绩：" + score
-                ;
+        return "学号：" + id + ", 姓名：" + name + ", 成绩：" + score;
     }
 }
 
