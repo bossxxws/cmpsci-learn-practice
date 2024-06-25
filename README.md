@@ -1,5 +1,5 @@
-**a student from nefu**
+**A student from nefu**
 
-*computer science and technology*
+*Computer Science and Technology*
 
 ****Sharing and learning of algorithms****
