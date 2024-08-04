@@ -52,14 +52,18 @@ int main()
     int minv = 0x3f3f3f3f, maxv = -0x3f3f3f3f;
     // cout<<0x3f<<endl;
     //cout<<minv<<endl;
+    
+    //从所有可能的状态（长度为n）中，枚举出最小值和最大值 
     for (int l = 1; l <= n; ++ l)
     {
-        minv = min(minv, g[l][l + n-1]);
+        minv = min(minv, g[l][l + n-1]); 
         //cout<<g[l][l+n-1]<<endl;
         //cout<<minv<<endl;
         maxv = max(maxv, f[l][l + n-1]);
     }
+    
     cout<<minv<<endl<<maxv<<endl;
+    
     //cout<<g[n][n+3]<<endl;
 	return 0;
 }
