@@ -1,6 +1,7 @@
 clc;
 clear;
-%          thetai       di      ai-1     alphai-1
+% 标准DH建模法
+%          thetai       di      ai     alphai
 L1 = Link([0            495     175      -pi/2  ],'standard');
 L2 = Link([0            0       1095      0     ],'standard');L2.offset=-pi/2;
 L3 = Link([0            0       175      -pi/2  ],'standard');
