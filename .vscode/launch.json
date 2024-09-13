@@ -2,6 +2,18 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "a01_experiment01_t1",
+      "request": "launch",
+      "mainClass": "com.nefu.lessons.experiment_01.a01_experiment01_t1"
+    },
+    {
+      "type": "java",
+      "name": "JavaTask",
+      "request": "launch",
+      "mainClass": "com.nefu.JavaTask"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",

@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\A_codes\cmpsci-learn-practice\WebDevelopment\nefu_lesson\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4137860113.index
+2089173900.index
+2255601296.index
+101253277.index
+492824312.index
+2202338284.index

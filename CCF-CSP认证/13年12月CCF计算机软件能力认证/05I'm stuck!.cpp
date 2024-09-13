@@ -118,7 +118,7 @@ bool dfs1(int x,int y)
 		//cout<<'S'<<endl;
 		for(int i=0;i<4;i++)
 		{
-			int nx=x+dx[i];
+			int nx=x+dx[i]; 
 			int ny=y+dy[i];
 			if(!mark[nx][ny] && nx>0 && ny>0 && nx<=r && ny<=c && g[nx][ny]!='#')if(dfs1(nx,ny))return true;
 		}
@@ -198,7 +198,7 @@ int main()
 	    printf("I'm stuck!");
 	    return 0;
 	}
-	//cout<<r<<" "<<c<<endl;
+//cout<<r<<" "<<c<<endl;
 // 	for(int i=1;i<=r;i++)
 // 	{
 // 	    for(int j=1;j<=c;j++)
@@ -218,13 +218,8 @@ int main()
     }//清空状态数组
     dfss(start.x,start.y);
     //cout<<"----------------------------------------"<<endl;
-    for(int i=1;i<=r;i++)
-    {
-        for(int j=1;j<=c;j++)
-        {
-            mark[i][j]=0;
-        }
-    }
+    
+    memset(mark,0,sizeof mark);//清空状态数组
 		    
 	for(int i=1;i<=r;i++)
 	{
