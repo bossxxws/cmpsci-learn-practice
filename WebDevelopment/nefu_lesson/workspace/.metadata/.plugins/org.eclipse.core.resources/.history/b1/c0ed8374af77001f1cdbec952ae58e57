@@ -4,17 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>实验一01！！！！</title>
 </head>
 <body>
-这是一个实验一:button
-<script type="text/javascript">
-	function aa()
-	{
-		alert("js");
-	}
-	
-</script>
-<button onclick="aa()">点我试试</button>
+<%
+for(int i=1;i<=5;i++)
+{
+	out.print("我是数字");
+	out.print(i);
+}
+%>
 </body>
 </html>
