@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-这是一个实验一:button
+这是一个button
 <script type="text/javascript">
 	function aa()
 	{

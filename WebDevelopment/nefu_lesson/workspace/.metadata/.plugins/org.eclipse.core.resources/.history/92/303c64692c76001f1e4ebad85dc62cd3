@@ -7,14 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-这是一个实验一:button
-<script type="text/javascript">
-	function aa()
-	{
-		alert("js");
-	}
-	
-</script>
-<button onclick="aa()">点我试试</button>
+
 </body>
 </html>

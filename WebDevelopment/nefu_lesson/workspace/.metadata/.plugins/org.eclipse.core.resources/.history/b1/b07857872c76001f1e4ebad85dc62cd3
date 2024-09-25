@@ -6,15 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
-这是一个实验一:button
 <script type="text/javascript">
-	function aa()
-	{
-		alert("js");
-	}
-	
+for(var a=0;a<100;a++)
+{
+	alert(a);
+}	
+
 </script>
-<button onclick="aa()">点我试试</button>
+<body>
+
 </body>
 </html>
