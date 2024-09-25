@@ -20,8 +20,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "d:/AFiles/cmpsci-learn-practice/CCF-CSP认证/33第33次CCF计算机软件能力认证",
+      "program": "d:/AFiles/cmpsci-learn-practice/CCF-CSP认证/33第33次CCF计算机软件能力认证/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
