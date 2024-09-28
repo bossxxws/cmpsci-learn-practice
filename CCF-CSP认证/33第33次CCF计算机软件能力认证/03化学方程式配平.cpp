@@ -10,7 +10,7 @@ const int N = 42;
 double mat[N][N];
 int n, m;
 map<string, int> elei;
-int index;
+int idx;
 
 double eps=1e-6;
 
@@ -20,7 +20,7 @@ void initMat(){
             mat[i][j] = 0;
 }
 
-void getElement(string str, int& index, int in){
+void getElement(string str, int& idx, int in){
     str = str + '#';
     string ele = "";
     int num = 0;
@@ -35,7 +35,7 @@ void getElement(string str, int& index, int in){
                 if(elei.find(ele) != elei.end()){
                     mat[elei[ele]][in] = num;
                 }else{
-                    elei[ele] = index ++;
+                    elei[ele] = idx ++;
                     mat[elei[ele]][in] = num;
                 }
                 ele = c;
@@ -72,30 +72,30 @@ int main()
         string str;
         initMat();
         elei.clear();
-        index = 0;
+        idx = 0;
 
         for (int i = 0; i < m; i ++){
             cin >> str;
-            getElement(str, index, i);
+            getElement(str, idx, i);
         }
         for (int i = 0; i < m; i ++ ){
             int j;
-            for (j = i; j < index; j ++)
+            for (j = i; j < idx; j ++)
                 if (fabs(mat[j][i]) >=eps) break;
 
-            if (j == index) continue;
+            if (j == idx) continue;
             else if (j != i){
                 _swap(i, j);    //swap i j
             }
 
-            for (j = i + 1; j < index; j ++){
+            for (j = i + 1; j < idx; j ++){
                 if (fabs(mat[j][i]) >=eps){
                     _sub(j, i); //j line sub i
                 }
             }
         }
         int k; 
-        for (k = 0; k < index && k < m; k ++ )
+        for (k = 0; k < idx && k < m; k ++ )
             if (fabs(mat[k][k]) <=eps) break;
         if (k < m) cout << "Y" << endl;
         else cout << "N" << endl;
