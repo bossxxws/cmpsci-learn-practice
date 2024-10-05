@@ -21,7 +21,7 @@ void initMat()
             mat[i][j] = 0;
 }
 
-void getElement(string str, int &index, int in)
+void getElement(string str, int &idx, int in)
 {
     str = str + '#';
     string ele = "";
@@ -45,7 +45,7 @@ void getElement(string str, int &index, int in)
                 }
                 else
                 {
-                    elei[ele] = index++;
+                    elei[ele] = idx++;
                     mat[elei[ele]][in] = num;
                 }
                 ele = c;
@@ -98,18 +98,18 @@ int main()
         for (int i = 0; i < m; i++)
         {
             int j;
-            for (j = i; j < index; j++)
+            for (j = i; j < idx; j++)
                 if (fabs(mat[j][i]) >= eps)
                     break;
 
-            if (j == index)
+            if (j == idx)
                 continue;
             else if (j != i)
             {
                 _swap(i, j); // swap i j
             }
 
-            for (j = i + 1; j < index; j++)
+            for (j = i + 1; j < idx; j++)
             {
                 if (fabs(mat[j][i]) >= eps)
                 {
@@ -118,7 +118,7 @@ int main()
             }
         }
         int k;
-        for (k = 0; k < index && k < m; k++)
+        for (k = 0; k < idx && k < m; k++)
             if (fabs(mat[k][k]) <= eps)
                 break;
         if (k < m)
