@@ -15,5 +15,6 @@ int main()
 	p=b;
 	cout<<endl;
 	cout<<b[0];
+	cout<<double(370)/double(230)<<endl;
 	return 0;
 }
