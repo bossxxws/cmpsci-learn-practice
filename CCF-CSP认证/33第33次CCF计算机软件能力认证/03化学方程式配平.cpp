@@ -10,7 +10,7 @@ const int N = 42;
 double mat[N][N];
 int n, m;
 map<string, int> elei;
-int index;
+int idx;
 
 double eps = 1e-6;
 
@@ -88,12 +88,12 @@ int main()
         string str;
         initMat();
         elei.clear();
-        index = 0;
+        idx = 0;
 
         for (int i = 0; i < m; i++)
         {
             cin >> str;
-            getElement(str, index, i);
+            getElement(str, idx, i);
         }
         for (int i = 0; i < m; i++)
         {
