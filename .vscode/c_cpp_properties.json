@@ -14,7 +14,7 @@
             "intelliSenseMode": "${default}",
             "cStandard": "${default}",
             "cppStandard": "${default}",
-            "compilerPath": "C:/Program Files/mingw64/bin/gcc.exe"
+            "compilerPath": "D:/mingw64/bin/g++.exe"
         }
     ],
     "version": 4
