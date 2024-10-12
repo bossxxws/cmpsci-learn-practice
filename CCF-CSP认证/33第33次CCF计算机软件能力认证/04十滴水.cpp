@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <unordered_map>
+
 using namespace std;
 
 const int N = 1e6;
@@ -21,6 +23,9 @@ bool cmp(drop a, drop b)
 
 int c, m, n;
 int res;
+
+unordered_map<int, int> mp;
+
 void work(int p)
 {
     // 没有爆炸的情况
@@ -39,14 +44,14 @@ void work(int p)
     d_data[d_data[p].d_last].d_size++;
     // cout << p<<" "<<d_data[d_data[p].d_next].d_pos << endl;
     // cout<<d_data[3].d_next<<endl;
-    //  右边水滴大小加一
+    // 右边水滴大小加一
     d_data[d_data[p].d_next].d_size++;
     // cout << d_data[d_data[p].d_next].d_size << endl;
 
-    if (d_data[p].d_last != 0 && d_data[d_data[p].d_last].s)
-        work(p - 1);
+    if (d_data[p].d_last > 0 && d_data[d_data[p].d_last].s)
+        work(d_data[p].d_last);
     if (d_data[d_data[p].d_next].s && d_data[p].d_next <= m)
-        work(p + 1);
+        work(d_data[p].d_next);
     return;
 }
 
@@ -67,9 +72,10 @@ int main()
     // cout<<m<<endl;
     for (int i = 1; i <= m; i++)
     {
-        d_data[i].d_last = d_data[i - 1].d_pos;
-        d_data[i].d_next = d_data[i + 1].d_pos;
+        d_data[i].d_last = i - 1;
+        d_data[i].d_next = i + 1;
         // if(i==3)cout<<3333<<d_data[3].d_pos<<endl;
+        mp[d_data[i].d_pos] = i;
     }
     res = m;
     // for (int i = 1; i <= m; i++)
@@ -81,9 +87,10 @@ int main()
         int p;
         cin >> p;
         // cout<<d_data[p].d_size<<endl;
-        d_data[p].d_size++;
+        int tar = mp[p];
+        d_data[tar].d_size++;
         // cout << "大小" << d_data[p].d_size << endl;
-        work(p);
+        work(tar);
         cout << res << endl;
     }
 
