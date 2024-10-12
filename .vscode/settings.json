@@ -60,6 +60,7 @@
   "files.associations": {
     "*.rmd": "markdown",
     "*.tcc": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "random": "cpp"
   }
 }

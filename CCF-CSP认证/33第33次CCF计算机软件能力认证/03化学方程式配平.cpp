@@ -108,7 +108,7 @@ int main()
             {
                 _swap(i, j); // swap i j
             }
-
+            
             for (j = i + 1; j < idx; j++)
             {
                 if (fabs(mat[j][i]) >= eps)
