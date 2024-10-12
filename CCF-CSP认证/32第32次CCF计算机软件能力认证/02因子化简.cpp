@@ -27,7 +27,7 @@ LL quickmi(LL a, int k)
 
 LL work(LL n, int k)
 {
-    // 清空primes
+    // 清空 primes
     primes.clear();
     // 把n化为多个质数的幂和
     for (LL i = 2; i <= n / i; i++)
@@ -38,7 +38,7 @@ LL work(LL n, int k)
             n /= i;
         }
     }
-    // cout << primes[5] << endl;
+    //  cout << primes[5] << endl;
     //  根号n另一端也可能存在一个较大的质因数，也算上
     //  或者说特殊的也算上（5没有质因数，它本身就是一个质数）
     if (n > 1)
