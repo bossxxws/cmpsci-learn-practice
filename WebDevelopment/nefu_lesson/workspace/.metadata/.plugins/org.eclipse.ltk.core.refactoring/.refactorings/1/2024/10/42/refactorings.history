@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;1/src/main/webapp/h作业/h06第一次作业：级联作业.jsp&apos; to &apos;h01第一次作业：级联作业.jsp&apos;" description="Rename resource &apos;h06第一次作业：级联作业.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/h作业/h06第一次作业：级联作业.jsp" name="h01第一次作业：级联作业.jsp" stamp="1729303101300" updateReferences="true"/>
+</session>

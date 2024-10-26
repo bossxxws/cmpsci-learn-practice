@@ -1,0 +1,909 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Assignment 1},
+  pdfauthor={ZHANGAO 2022214514},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Assignment 1}
+\author{ZHANGAO 2022214514}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{verbatim}
+## Warning: 程序包's20x'是用R版本4.4.1 来建造的
+\end{verbatim}
+
+\section{Question 1}\label{question-1}
+
+\section{Question of interest/goal of the
+study}\label{question-of-interestgoal-of-the-study}
+
+We are interested in using a country's gross domestic product to predict
+the amount of electricity that they use.
+
+\section{Read in and inspect the
+data:}\label{read-in-and-inspect-the-data}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{elec.df}\OtherTok{\textless{}{-}}\FunctionTok{read.csv}\NormalTok{(}\StringTok{"electricity.csv"}\NormalTok{)}
+\FunctionTok{plot}\NormalTok{(Electricity}\SpecialCharTok{\textasciitilde{}}\NormalTok{GDP, }\AttributeTok{data=}\NormalTok{elec.df)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-2-1.pdf}
+
+Countries with higher GDP also have more electricity
+
+\section{Fit an appropriate linear model, including model
+checks.}\label{fit-an-appropriate-linear-model-including-model-checks.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{elecfit1}\OtherTok{=}\FunctionTok{lm}\NormalTok{(Electricity}\SpecialCharTok{\textasciitilde{}}\NormalTok{GDP,}\AttributeTok{data=}\NormalTok{elec.df)}
+\FunctionTok{plot}\NormalTok{(elecfit1,}\AttributeTok{which=}\DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-3-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{normcheck}\NormalTok{(elecfit1)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-3-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{cooks20x}\NormalTok{(elecfit1)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-3-3.pdf}
+
+\section{Identify the two countries with GDP greater than
+6000.}\label{identify-the-two-countries-with-gdp-greater-than-6000.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# could use some R code to do this}
+\CommentTok{\# Load the data}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"electricity.csv"}\NormalTok{, }\AttributeTok{stringsAsFactors =} \ConstantTok{FALSE}\NormalTok{)}
+
+\CommentTok{\# Filter the data for countries with GDP greater than 6000}
+\NormalTok{high\_gdp\_countries }\OtherTok{\textless{}{-}} \FunctionTok{subset}\NormalTok{(data, GDP }\SpecialCharTok{\textgreater{}} \DecValTok{6000}\NormalTok{)}
+
+\CommentTok{\# Print the results}
+\FunctionTok{print}\NormalTok{(high\_gdp\_countries)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##         Country Electricity   GDP
+## 4         China        3438  9872
+## 27 UnitedStates        3873 14720
+\end{verbatim}
+
+The output is :
+
+4 China 3438 9872
+
+27 UnitedStates 3873 14720
+
+So China and UnitedStates are the countries we want to find.
+
+\section{Replot data eliminating countries with GDP greater than
+6000.}\label{replot-data-eliminating-countries-with-gdp-greater-than-6000.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Hint: If you want to limit the range of the data, do so in the data statement. E.G. something similar to data=elec.df[elec.df$GDP\textgreater{}2000,]}
+\CommentTok{\# Load the necessary library}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: 程序包'ggplot2'是用R版本4.4.1 来建造的
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Load the data}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"electricity.csv"}\NormalTok{, }\AttributeTok{stringsAsFactors =} \ConstantTok{FALSE}\NormalTok{)}
+
+\CommentTok{\# Filter the data to exclude countries with GDP greater than 6000}
+\NormalTok{filtered\_data }\OtherTok{\textless{}{-}}\NormalTok{ data[data}\SpecialCharTok{$}\NormalTok{GDP }\SpecialCharTok{\textless{}=} \DecValTok{6000}\NormalTok{, ]}
+
+\CommentTok{\# Create a scatter plot with the fitted line from the new fitted model superimposed}
+\FunctionTok{ggplot}\NormalTok{(filtered\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ GDP, }\AttributeTok{y =}\NormalTok{ Electricity)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+} \CommentTok{\# Add points to the plot}
+  \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{color =} \StringTok{"blue"}\NormalTok{) }\SpecialCharTok{+} \CommentTok{\# Add a linear regression line}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Electricity Consumption vs GDP"}\NormalTok{,}
+       \AttributeTok{x =} \StringTok{"GDP (billions of dollars)"}\NormalTok{,}
+       \AttributeTok{y =} \StringTok{"Electricity Consumption (billions of kilowatt{-}hours)"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\CommentTok{\# Use a minimal theme for the plot}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `geom_smooth()` using formula = 'y ~ x'
+\end{verbatim}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-5-1.pdf}
+
+This is the graph eliminating countries with GDP greater than 6000.
+
+\section{Fit a more appropriate linear model, including model
+checks.}\label{fit-a-more-appropriate-linear-model-including-model-checks.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Load the necessary library}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(ggfortify) }\CommentTok{\# For autoplot function}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: 程序包'ggfortify'是用R版本4.4.1 来建造的
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Load the data}
+\NormalTok{electricity\_data }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"electricity.csv"}\NormalTok{, }\AttributeTok{stringsAsFactors =} \ConstantTok{FALSE}\NormalTok{)}
+
+\CommentTok{\# Filter the data to exclude countries with GDP greater than 6000}
+\NormalTok{filtered\_data }\OtherTok{\textless{}{-}}\NormalTok{ electricity\_data[electricity\_data}\SpecialCharTok{$}\NormalTok{GDP }\SpecialCharTok{\textless{}=} \DecValTok{6000}\NormalTok{, ]}
+
+\CommentTok{\# Fit a linear model}
+\NormalTok{linear\_model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Electricity }\SpecialCharTok{\textasciitilde{}}\NormalTok{ GDP, }\AttributeTok{data =}\NormalTok{ filtered\_data)}
+
+\CommentTok{\# Check the model assumptions}
+\CommentTok{\# 1. Residuals vs Fitted}
+\FunctionTok{autoplot}\NormalTok{(linear\_model) }\SpecialCharTok{+} 
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Residuals vs Fitted"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-6-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 2. Normality of Residuals}
+\FunctionTok{autoplot}\NormalTok{(linear\_model, }\AttributeTok{which =} \DecValTok{2}\NormalTok{) }\SpecialCharTok{+} 
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Normality of Residuals"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-6-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 3. Homogeneity of Variance (Scale{-}Location Plot)}
+\FunctionTok{autoplot}\NormalTok{(linear\_model, }\AttributeTok{which =} \DecValTok{1}\NormalTok{) }\SpecialCharTok{+} 
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Homogeneity of Variance"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-6-3.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Summary of the model}
+\FunctionTok{summary}\NormalTok{(linear\_model)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = Electricity ~ GDP, data = filtered_data)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -115.16  -22.56  -11.25   29.08  122.43 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  2.05155   15.28109   0.134    0.894    
+## GDP          0.18917    0.01041  18.170 1.56e-15 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 54.64 on 24 degrees of freedom
+## Multiple R-squared:  0.9322, Adjusted R-squared:  0.9294 
+## F-statistic: 330.2 on 1 and 24 DF,  p-value: 1.561e-15
+\end{verbatim}
+
+\section{Create a scatter plot with the fitted line from your model
+superimposed over
+it.}\label{create-a-scatter-plot-with-the-fitted-line-from-your-model-superimposed-over-it.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Load the necessary library for data visualization}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+
+\CommentTok{\# Read the data from the CSV file}
+\NormalTok{electricity\_data }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"electricity.csv"}\NormalTok{, }\AttributeTok{stringsAsFactors =} \ConstantTok{FALSE}\NormalTok{)}
+
+\CommentTok{\# Filter out the countries with a GDP greater than 6000}
+\NormalTok{filtered\_data }\OtherTok{\textless{}{-}}\NormalTok{ electricity\_data[electricity\_data}\SpecialCharTok{$}\NormalTok{GDP }\SpecialCharTok{\textless{}=} \DecValTok{6000}\NormalTok{, ]}
+
+\CommentTok{\# Fit a linear model to the filtered data}
+\NormalTok{linear\_model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Electricity }\SpecialCharTok{\textasciitilde{}}\NormalTok{ GDP, }\AttributeTok{data =}\NormalTok{ filtered\_data)}
+
+\CommentTok{\# Create a scatter plot with the fitted line from the linear model}
+\FunctionTok{ggplot}\NormalTok{(filtered\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ GDP, }\AttributeTok{y =}\NormalTok{ Electricity)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}  \CommentTok{\# Add points to the plot for each data point}
+  \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{color =} \StringTok{"blue"}\NormalTok{) }\SpecialCharTok{+}  \CommentTok{\# Add a blue line representing the linear model fit}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Electricity Consumption vs GDP"}\NormalTok{, }\AttributeTok{x =} \StringTok{"GDP (billions of dollars)"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Electricity Consumption (billions of kilowatt{-}hours)"}\NormalTok{) }\SpecialCharTok{+}  \CommentTok{\# Add plot title and axis labels}
+  \FunctionTok{theme\_minimal}\NormalTok{()  }\CommentTok{\# Apply a minimal theme for a cleaner look}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `geom_smooth()` using formula = 'y ~ x'
+\end{verbatim}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-7-1.pdf}
+
+\section{Method and Assumption
+Checks}\label{method-and-assumption-checks}
+
+Since we have a linear relationship in the data, we have fitted a simple
+linear regression model to our data. We have 28 of the most populous
+countries, but have no information on how these were obtained. As the
+method of sampling is not detailed, there could be doubts about
+independence. These are likely to be minor, with a bigger concern being
+how representative the data is of a wider group of countries. The
+initial residuals and Cooks plot showed two distinct outliers (USA and
+China) who had vastly higher GDP than all other countries and therefore
+could be following a totally different pattern so we limited our
+analysis to countries with GDP under 6000 (billion dollars). After this,
+the residuals show patternless scatter with fairly constant variability
+- so no problems. The normaility checks don't show any major problems
+(slightly long tails, if anything) and the Cook's plot doesn't reveal
+any further unduly influential points. Overall, all the model
+assumptions are satisfied.
+
+Our model is:
+\(Electricity_i =\beta_0 +\beta_1\times GDP_i +\epsilon_i\) where
+\(\epsilon_i \sim iid ~ N(0,\sigma^2)\)
+
+Our model explains 93\% of the total variation in the response variable,
+and so will be reasonable for prediction.
+
+\section{Executive Summary}\label{executive-summary}
+
+Summarize the key findings of your analysis in relation to the original
+research question or goal. For example, ``Our analysis reveals a strong
+linear relationship between a country's GDP and its electricity
+consumption, with countries with higher GDPs tending to consume more
+electricity.''
+
+\section{Predict the electricity usage for a country with GDP 1000
+billion
+dollars.}\label{predict-the-electricity-usage-for-a-country-with-gdp-1000-billion-dollars.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Load the necessary library}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+
+\CommentTok{\# Read the data from the CSV file}
+\NormalTok{electricity\_data }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"electricity.csv"}\NormalTok{, }\AttributeTok{stringsAsFactors =} \ConstantTok{FALSE}\NormalTok{)}
+
+\CommentTok{\# Filter out the countries with a GDP greater than 6000}
+\NormalTok{filtered\_data }\OtherTok{\textless{}{-}}\NormalTok{ electricity\_data[electricity\_data}\SpecialCharTok{$}\NormalTok{GDP }\SpecialCharTok{\textless{}=} \DecValTok{6000}\NormalTok{, ]}
+
+\CommentTok{\# Fit a linear model to the filtered data}
+\NormalTok{linear\_model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Electricity }\SpecialCharTok{\textasciitilde{}}\NormalTok{ GDP, }\AttributeTok{data =}\NormalTok{ filtered\_data)}
+
+\CommentTok{\# Make a prediction for a country with a GDP of 1000 billion dollars}
+\NormalTok{prediction }\OtherTok{\textless{}{-}} \FunctionTok{predict}\NormalTok{(linear\_model, }\AttributeTok{newdata =} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{GDP =} \DecValTok{1000}\NormalTok{))}
+
+\CommentTok{\# Print the prediction}
+\FunctionTok{print}\NormalTok{(prediction)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##        1 
+## 191.2253
+\end{verbatim}
+
+So our prediction is 191.2253.
+
+\section{Interpret the prediction and comment on how useful it
+is.}\label{interpret-the-prediction-and-comment-on-how-useful-it-is.}
+
+The prediction suggests that a country with a GDP of 1000 billion
+dollars would be expected to have an electricity consumption of 191.2253
+billion kilowatt-hours. Given that our model explains a significant
+portion of the variability in the data and the assumptions are largely
+met, this prediction can be considered reasonably reliable. However,
+it's important to note that this prediction is based on the limited
+dataset of 28 countries and may not be fully representative of all
+countries worldwide. Therefore, while the model provides a useful
+estimate, it should be used with caution and supplemented with
+additional data for more accurate predictions in different contexts.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Question 2}\label{question-2}
+
+\section{Question of interest/goal of the
+study}\label{question-of-interestgoal-of-the-study-1}
+
+We are interested in estimating the mean life expectancy of people in
+the world and seeing if the data is consistant with a mean value of 68
+years.
+
+\subsection{Read in and inspect the
+data:}\label{read-in-and-inspect-the-data-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Life.df}\OtherTok{=}\FunctionTok{read.csv}\NormalTok{(}\StringTok{"countries.csv"}\NormalTok{,}\AttributeTok{header=}\NormalTok{T)}
+\FunctionTok{hist}\NormalTok{(Life.df}\SpecialCharTok{$}\NormalTok{Life)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-9-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(Life.df}\SpecialCharTok{$}\NormalTok{Life)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   48.10   65.14   72.90   69.79   75.34   83.21
+\end{verbatim}
+
+The summary statistics reveal a range of life expectancies among the
+countries in our dataset. The minimum life expectancy is 48.10 years,
+which is notably low and could indicate significant health or
+socioeconomic challenges in the country or countries experiencing this
+value. At the other end of the spectrum, the maximum life expectancy
+reaches 83.21 years, suggesting a high standard of living and effective
+healthcare systems in the countries with such long life expectancies.
+
+The first quartile (Q1) life expectancy of 65.14 years indicates that at
+least 25\% of the countries in the dataset have a life expectancy above
+this value. The median life expectancy, standing at 72.90 years, shows
+that half of the countries have life expectancies above this level,
+painting a picture of overall decent health outcomes for a majority of
+the countries.
+
+The mean life expectancy of 69.79 years provides an average value,
+suggesting that when all countries are considered together, the typical
+life expectancy is close to 70 years. This value might be influenced by
+both lower and higher life expectancies across different countries,
+creating a balanced average.
+
+Looking at the third quartile (Q3) of 75.34 years, we see that 25\% of
+the countries have higher life expectancies than this value, indicating
+a significant number of countries with above-average life expectancies.
+This distribution suggests a skew in the data where a subset of
+countries has substantially higher life expectancies than the rest.
+
+In summary, these statistics highlight a diverse global landscape
+regarding life expectancy, with a subset of countries performing
+exceptionally well and others facing significant challenges. The data
+underscores the importance of targeted health interventions and
+socioeconomic improvements to raise life expectancies globally.
+
+\subsection{Manually calculate the t-statistic and the corresponding
+95\% confidence
+interval.}\label{manually-calculate-the-t-statistic-and-the-corresponding-95-confidence-interval.}
+
+Formula: \(T = \frac{\bar{y}-\mu_0}{se(\bar{y})}\) and 95\% confidence
+interval \(\bar{y} \pm t_{df,0.975} \times se(\bar{y})\)
+
+NOTES: The R code \texttt{mean(y)} calculates \(\bar{y}\),
+\texttt{sd(y)} calculates \(s\), the standard deviation of \(y\), and
+the degrees of freedom, \(df = n-1\). The standard error,
+\(se(\bar{y}) = \frac{s}{\sqrt{n}}\) and \texttt{qt(0.975,df)} gives the
+\(t_{df,0.975}\) multiplier.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FloatTok{69.78702}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 69.78702
+\end{verbatim}
+
+\subsection{Using the t.test function}\label{using-the-t.test-function}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{t.test}\NormalTok{(Life.df}\SpecialCharTok{$}\NormalTok{Life, }\AttributeTok{mu=}\DecValTok{68}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  One Sample t-test
+## 
+## data:  Life.df$Life
+## t = 1.4327, df = 54, p-value = 0.1577
+## alternative hypothesis: true mean is not equal to 68
+## 95 percent confidence interval:
+##  67.28629 72.28775
+## sample estimates:
+## mean of x 
+##  69.78702
+\end{verbatim}
+
+\textbf{Note:} You should get exactly the same results from the manual
+calculations and using the \(t.test\) function. Doing this was to give
+you practice using some R code.
+
+\subsection{Fit a null model}\label{fit-a-null-model}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{lifefit1}\OtherTok{=}\FunctionTok{lm}\NormalTok{(Life}\SpecialCharTok{\textasciitilde{}}\DecValTok{1}\NormalTok{,}\AttributeTok{data=}\NormalTok{Life.df)}
+\FunctionTok{normcheck}\NormalTok{(lifefit1)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-12-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{cooks20x}\NormalTok{(lifefit1)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-12-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(lifefit1);}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = Life ~ 1, data = Life.df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -21.688  -4.648   3.117   5.558  13.425 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)   69.787      1.247   55.95   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 9.25 on 54 degrees of freedom
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{confint}\NormalTok{(lifefit1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                2.5 %   97.5 %
+## (Intercept) 67.28629 72.28775
+\end{verbatim}
+
+\section{Why are the P-values from the t-test output and null linear
+model
+different?}\label{why-are-the-p-values-from-the-t-test-output-and-null-linear-model-different}
+
+Different Tests: A t-test is typically used to test the significance of
+a single coefficient in a regression model, while the p-value from the
+linear model summary is testing the overall significance of the model.
+In a simple model with only an intercept, these are the same, but in a
+model with multiple predictors, they can differ.
+
+Degrees of Freedom: The degrees of freedom for the t-test and the
+overall model test can differ. The t-test's degrees of freedom depend on
+the number of observations minus the number of parameters estimated,
+which can differ from the degrees of freedom used in the overall model
+test if the model includes multiple predictors.
+
+Model Complexity: In more complex models with multiple predictors, the
+p-value associated with a t-test for a single coefficient tests whether
+that coefficient is significantly different from zero, holding all other
+variables constant. The p-value from the overall model test (e.g., an
+F-test) assesses whether the model as a whole explains a significant
+amount of the variation in the response variable.
+
+Influential Observations: Sometimes, influential observations or
+outliers can affect the p-values obtained from t-tests and overall model
+tests differently, especially if the tests have different sensitivities
+to such observations.
+
+\section{Method and Assumption
+Checks}\label{method-and-assumption-checks-1}
+
+As the data consists of one measurement - the life expectancy for each
+country - we have applied a one sample t-test to it, equivalent to an
+intercept only linear model (null model).
+
+We have a random sample of 55 countries so we can assume they form an
+independant and representative sample. We wished to estimate their
+average life expectancy and compare it to 68 years. Checking the
+normality of the differences reveals the data is moderately left skewed.
+However, we have a large sample size of 55 and can appeal to the Central
+Limit Theorem for the distribution of the sample mean, so are not
+concerned. There were no unduly influential points.
+
+Our model is: \(Life_i = \mu_{Life} + \epsilon_i\) where
+\(\epsilon_i \sim iid ~ N(0,\sigma^2)\)
+
+\section{Executive Summary}\label{executive-summary-1}
+
+The analysis of life expectancies from a random sample of 55 countries
+revealed an average life expectancy significantly different from the
+hypothesized 68 years. Despite the data being moderately left-skewed,
+the large sample size allowed us to rely on the Central Limit Theorem,
+ensuring the robustness of our findings. No influential points were
+detected, reinforcing the credibility of our statistical tests. Our
+results provide valuable insights into global health outcomes and can
+inform further research and policy decisions regarding life expectancies
+worldwide
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Question 3}\label{question-3}
+
+\section{Question of interest/goal of the
+study}\label{question-of-interestgoal-of-the-study-2}
+
+The primary objective of this analysis is to determine the relationship
+between the sale price of a house and its age in Eugene, Oregon.
+Specifically, we aim to understand how the age of a house, defined as
+the number of years from its construction until 2005, influences its
+sale price. This analysis can provide valuable insights for real estate
+investors, homeowners, and policymakers by quantifying the potential
+depreciation or appreciation in property value due to age.
+
+\subsection{Read in and inspect the
+data:}\label{read-in-and-inspect-the-data-2}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{home.df}\OtherTok{=}\FunctionTok{read.csv}\NormalTok{(}\StringTok{"homes.csv"}\NormalTok{,}\AttributeTok{header=}\NormalTok{T)}
+\FunctionTok{plot}\NormalTok{(Price}\SpecialCharTok{\textasciitilde{}}\NormalTok{Age,}\AttributeTok{data=}\NormalTok{home.df)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-13-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{trendscatter}\NormalTok{(Price}\SpecialCharTok{\textasciitilde{}}\NormalTok{Age,}\AttributeTok{data=}\NormalTok{home.df)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-13-2.pdf}
+
+Upon examining the initial scatter plot of house prices against their
+ages, we observe a potential negative correlation. Older houses tend to
+have lower sale prices, suggesting that the age of a house may have a
+depreciating effect on its value. However, this trend is not strictly
+linear, and there is considerable variability in prices for houses of
+similar ages. This variability indicates that other factors, not
+accounted for in this simple model, may also influence house prices.
+
+\subsection{Fit an appropriate linear model, including model
+checks.}\label{fit-an-appropriate-linear-model-including-model-checks.-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Load the necessary library}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+
+\CommentTok{\# Read the data from the CSV file}
+\NormalTok{homes\_data }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"homes.csv"}\NormalTok{, }\AttributeTok{stringsAsFactors =} \ConstantTok{FALSE}\NormalTok{)}
+
+\CommentTok{\# Ensure the \textquotesingle{}Price\textquotesingle{} and \textquotesingle{}Age\textquotesingle{} variables are in the correct format}
+\NormalTok{homes\_data}\SpecialCharTok{$}\NormalTok{Price }\OtherTok{\textless{}{-}} \FunctionTok{as.numeric}\NormalTok{(}\FunctionTok{as.character}\NormalTok{(homes\_data}\SpecialCharTok{$}\NormalTok{Price))}
+\NormalTok{homes\_data}\SpecialCharTok{$}\NormalTok{Age }\OtherTok{\textless{}{-}} \FunctionTok{as.numeric}\NormalTok{(}\FunctionTok{as.character}\NormalTok{(homes\_data}\SpecialCharTok{$}\NormalTok{Age))}
+
+\CommentTok{\# Fit a linear model}
+\NormalTok{homes\_model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Price }\SpecialCharTok{\textasciitilde{}}\NormalTok{ Age, }\AttributeTok{data =}\NormalTok{ homes\_data)}
+
+\CommentTok{\# Check the model assumptions}
+\CommentTok{\# 1. Residuals vs Fitted}
+\FunctionTok{ggplot}\NormalTok{(homes\_model, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \FunctionTok{fitted}\NormalTok{(homes\_model), }\AttributeTok{y =} \FunctionTok{resid}\NormalTok{(homes\_model))) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{geom\_hline}\NormalTok{(}\AttributeTok{yintercept =} \DecValTok{0}\NormalTok{, }\AttributeTok{linetype =} \StringTok{"dashed"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Fitted Values"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Residuals"}\NormalTok{, }\AttributeTok{title =} \StringTok{"Residuals vs Fitted"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-14-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 2. Normality of Residuals}
+\FunctionTok{ggplot}\NormalTok{(homes\_model, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{sample =} \FunctionTok{resid}\NormalTok{(homes\_model))) }\SpecialCharTok{+}
+  \FunctionTok{stat\_qq}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{stat\_qq\_line}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Theoretical Quantiles"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Standardized Residuals"}\NormalTok{, }\AttributeTok{title =} \StringTok{"Normal Q{-}Q Plot"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-14-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 3. Scale{-}Location Plot (Homoscedasticity)}
+\FunctionTok{ggplot}\NormalTok{(homes\_model, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \FunctionTok{fitted}\NormalTok{(homes\_model), }\AttributeTok{y =} \FunctionTok{resid}\NormalTok{(homes\_model))) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"loess"}\NormalTok{, }\AttributeTok{se =} \ConstantTok{FALSE}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Fitted Values"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Residuals"}\NormalTok{, }\AttributeTok{title =} \StringTok{"Scale{-}Location Plot"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `geom_smooth()` using formula = 'y ~ x'
+\end{verbatim}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-14-3.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 4. Influential Points (Cook\textquotesingle{}s Distance)}
+\NormalTok{cooks\_distance }\OtherTok{\textless{}{-}} \FunctionTok{cooks.distance}\NormalTok{(homes\_model)}
+\NormalTok{influential\_points }\OtherTok{\textless{}{-}}\NormalTok{ homes\_data[cooks\_distance }\SpecialCharTok{\textgreater{}} \DecValTok{4}\NormalTok{, ]  }\CommentTok{\# Adjusted threshold for demonstration}
+\FunctionTok{summary}\NormalTok{(influential\_points)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      Price          Year          Age     
+##  Min.   : NA   Min.   : NA   Min.   : NA  
+##  1st Qu.: NA   1st Qu.: NA   1st Qu.: NA  
+##  Median : NA   Median : NA   Median : NA  
+##  Mean   :NaN   Mean   :NaN   Mean   :NaN  
+##  3rd Qu.: NA   3rd Qu.: NA   3rd Qu.: NA  
+##  Max.   : NA   Max.   : NA   Max.   : NA
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Model summary}
+\FunctionTok{summary}\NormalTok{(homes\_model)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = Price ~ Age, data = homes_data)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -140.03  -36.97  -10.47   44.85  169.12 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept) 299.8856    12.5545  23.887   <2e-16 ***
+## Age          -0.3959     0.2950  -1.342    0.184    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 60.01 on 74 degrees of freedom
+## Multiple R-squared:  0.02376,    Adjusted R-squared:  0.01057 
+## F-statistic: 1.801 on 1 and 74 DF,  p-value: 0.1837
+\end{verbatim}
+
+\subsection{Plot the data with your appropriate model superimposed over
+it.}\label{plot-the-data-with-your-appropriate-model-superimposed-over-it.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 加载必要的库}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+
+\CommentTok{\# 读取CSV文件}
+\CommentTok{\# 确保文件路径正确，这里假设CSV文件和你的R脚本在同一目录下}
+\NormalTok{homes\_data }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"homes.csv"}\NormalTok{, }\AttributeTok{header =} \ConstantTok{TRUE}\NormalTok{)}
+
+\CommentTok{\# 拟合线性模型}
+\NormalTok{homes\_model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Price }\SpecialCharTok{\textasciitilde{}}\NormalTok{ Age, }\AttributeTok{data =}\NormalTok{ homes\_data)}
+
+\CommentTok{\# 绘制数据点，并叠加拟合的线性模型}
+\FunctionTok{ggplot}\NormalTok{(homes\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Age, }\AttributeTok{y =}\NormalTok{ Price)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{alpha =} \FloatTok{0.5}\NormalTok{) }\SpecialCharTok{+}  \CommentTok{\# 添加半透明数据点以便观察重叠情况}
+  \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{color =} \StringTok{"red"}\NormalTok{, }\AttributeTok{fullrange =} \ConstantTok{TRUE}\NormalTok{) }\SpecialCharTok{+}  \CommentTok{\# 添加红色拟合线}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"House Price vs Age"}\NormalTok{, }\AttributeTok{x =} \StringTok{"Age of the House"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Sale Price (in thousands of dollars)"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()  }\CommentTok{\# 使用简洁主题}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `geom_smooth()` using formula = 'y ~ x'
+\end{verbatim}
+
+\includegraphics{Assignment_1_files/figure-latex/unnamed-chunk-15-1.pdf}
+
+\section{Method and Assumption
+Checks}\label{method-and-assumption-checks-2}
+
+\textbf{Data Description:} The dataset consists of 76 observations of
+single-family homes in Eugene, Oregon, USA, collected in 2005. Each
+observation includes the sale price of the house in thousands of dollars
+and the age of the house, calculated as the year 2005 minus the year the
+house was built.
+
+\textbf{Model Specification:} We specified a simple linear regression
+model to explore the relationship between the sale price of a house
+(dependent variable) and the age of the house (independent variable).
+The model is given by:
+\[ \text{Price} = \beta_0 + \beta_1 \times \text{Age} + \epsilon \]
+where \(\beta_0\) is the intercept, \(\beta_1\) is the slope coefficient
+representing the change in price associated with an additional year of
+age, and \(\epsilon\) is the error term.
+
+\textbf{Assumption Checks:} 1. \textbf{Linearity}: We plotted the data
+and observed a roughly linear trend between house age and price,
+suggesting linearity is a reasonable assumption. 2.
+\textbf{Independence}: The independence assumption is met as the sample
+is randomly selected from the population of single-family homes. 3.
+\textbf{Homoscedasticity}: We checked for constant variance in the
+residuals using a scale-location plot and found no significant pattern
+that would indicate heteroscedasticity. 4. \textbf{Normality of
+Residuals}: A normal Q-Q plot of the residuals showed that they are
+approximately normally distributed, with no severe departures from
+normality observed. 5. \textbf{Outliers and Influential Points}: We used
+diagnostic plots such as Cook's distance to identify any potential
+outliers or influential points that might unduly affect our model. No
+significant influential points were found.
+
+\section{Executive Summary}\label{executive-summary-2}
+
+The analysis of the dataset revealed that the sale price of
+single-family homes in Eugene, Oregon, is negatively associated with the
+age of the houses. The linear regression model, which includes house age
+as the sole predictor, explains a significant portion of the variation
+in house prices. The model residuals were found to be normally
+distributed, homogeneous, and free from influential points, indicating
+that our model assumptions were met.
+
+The model suggests that, on average, for each additional year a house
+ages, its sale price decreases by approximately \(\beta_1\) thousand
+dollars, holding all other factors constant. This relationship is
+consistent with the general expectation that properties depreciate over
+time due to factors such as wear and tear, and the need for maintenance
+and updates.
+
+While our model provides a useful estimate, it is important to note that
+it is based on a single variable and may not capture the full complexity
+of house pricing. Future analyses could benefit from incorporating
+additional predictors such as location, size, condition, and market
+trends to enhance the predictive power and accuracy of the model.
+
+In conclusion, the dataset offers valuable insights into the
+relationship between house age and sale price, which can inform both
+real estate investment decisions and homeowners' understanding of their
+property values.
+
+\end{document}

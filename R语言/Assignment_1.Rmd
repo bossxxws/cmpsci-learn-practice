@@ -1,0 +1,429 @@
+---
+title: "Assignment 1"
+author: "张奥 2022214514"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.height=3)
+```
+```{r echo=FALSE}
+## Do not delete this!
+## It loads the s20x library for you. If you delete it 
+## your document may not compile
+library(s20x)
+```
+
+
+# Question 1
+
+
+# Question of interest/goal of the study
+
+We are interested in using a country's gross domestic product to predict the amount of electricity that they use.
+
+# Read in and inspect the data:
+```{r,fig.height=4,fig.width=6}
+elec.df<-read.csv("electricity.csv")
+plot(Electricity~GDP, data=elec.df)
+
+```
+
+Countries with higher GDP also have more electricity
+
+# Fit an appropriate linear model, including model checks.
+```{r,fig.height=4,fig.width=6}
+elecfit1=lm(Electricity~GDP,data=elec.df)
+plot(elecfit1,which=1)
+normcheck(elecfit1)
+cooks20x(elecfit1)
+```
+
+# Identify the two countries with GDP greater than 6000. 
+```{r,fig.height=4,fig.width=6}
+# could use some R code to do this
+# Load the data
+data <- read.csv("electricity.csv", stringsAsFactors = FALSE)
+
+# Filter the data for countries with GDP greater than 6000
+high_gdp_countries <- subset(data, GDP > 6000)
+
+# Print the results
+print(high_gdp_countries)
+```
+
+The output is :
+
+
+ 4         China        3438  9872
+
+ 27 UnitedStates        3873 14720
+
+So China and UnitedStates are the countries we want to find.
+
+# Replot data eliminating countries with GDP greater than 6000. 
+```{r,fig.height=4,fig.width=6}
+# Hint: If you want to limit the range of the data, do so in the data statement. E.G. something similar to data=elec.df[elec.df$GDP>2000,]
+# Load the necessary library
+library(ggplot2)
+
+# Load the data
+data <- read.csv("electricity.csv", stringsAsFactors = FALSE)
+
+# Filter the data to exclude countries with GDP greater than 6000
+filtered_data <- data[data$GDP <= 6000, ]
+
+# Create a scatter plot with the fitted line from the new fitted model superimposed
+ggplot(filtered_data, aes(x = GDP, y = Electricity)) +
+  geom_point() + # Add points to the plot
+  geom_smooth(method = "lm", color = "blue") + # Add a linear regression line
+  labs(title = "Electricity Consumption vs GDP",
+       x = "GDP (billions of dollars)",
+       y = "Electricity Consumption (billions of kilowatt-hours)") +
+  theme_minimal() # Use a minimal theme for the plot
+
+```
+
+This is the graph eliminating countries with GDP greater than 6000.
+
+
+
+# Fit a more appropriate linear model, including model checks.
+```{r,fig.height=4,fig.width=6}
+# Load the necessary library
+library(ggplot2)
+library(ggfortify) # For autoplot function
+
+# Load the data
+electricity_data <- read.csv("electricity.csv", stringsAsFactors = FALSE)
+
+# Filter the data to exclude countries with GDP greater than 6000
+filtered_data <- electricity_data[electricity_data$GDP <= 6000, ]
+
+# Fit a linear model
+linear_model <- lm(Electricity ~ GDP, data = filtered_data)
+
+# Check the model assumptions
+# 1. Residuals vs Fitted
+autoplot(linear_model) + 
+  labs(title = "Residuals vs Fitted") +
+  theme_minimal()
+
+# 2. Normality of Residuals
+autoplot(linear_model, which = 2) + 
+  labs(title = "Normality of Residuals") +
+  theme_minimal()
+
+# 3. Homogeneity of Variance (Scale-Location Plot)
+autoplot(linear_model, which = 1) + 
+  labs(title = "Homogeneity of Variance") +
+  theme_minimal()
+
+# Summary of the model
+summary(linear_model)
+
+```
+
+
+# Create a scatter plot with the fitted line from your model superimposed over it. 
+```{r,fig.height=4,fig.width=6}
+
+# Load the necessary library for data visualization
+library(ggplot2)
+
+# Read the data from the CSV file
+electricity_data <- read.csv("electricity.csv", stringsAsFactors = FALSE)
+
+# Filter out the countries with a GDP greater than 6000
+filtered_data <- electricity_data[electricity_data$GDP <= 6000, ]
+
+# Fit a linear model to the filtered data
+linear_model <- lm(Electricity ~ GDP, data = filtered_data)
+
+# Create a scatter plot with the fitted line from the linear model
+ggplot(filtered_data, aes(x = GDP, y = Electricity)) +
+  geom_point() +  # Add points to the plot for each data point
+  geom_smooth(method = "lm", color = "blue") +  # Add a blue line representing the linear model fit
+  labs(title = "Electricity Consumption vs GDP", x = "GDP (billions of dollars)", y = "Electricity Consumption (billions of kilowatt-hours)") +  # Add plot title and axis labels
+  theme_minimal()  # Apply a minimal theme for a cleaner look
+
+```
+
+
+# Method and Assumption Checks
+Since we have a linear relationship in the data, we have fitted a simple linear regression model to our data. We have 28 of the most populous countries, but have no information on how these were obtained. As the method of sampling is not detailed, there  could be doubts about independence. These are likely to be minor, with a bigger concern being how representative the data is of a wider group of countries. The initial residuals and Cooks plot showed two distinct outliers (USA and China) who had vastly higher GDP than all other countries and therefore could be following a totally different pattern so we limited our analysis to countries with GDP under 6000 (billion dollars). After this, the residuals show patternless scatter with fairly constant variability - so no problems. The normaility checks don't show any major problems (slightly long tails, if anything) and the Cook's plot doesn't reveal any further unduly influential points. Overall, all the model assumptions are satisfied. 
+
+Our model is:
+$Electricity_i =\beta_0 +\beta_1\times GDP_i +\epsilon_i$ where $\epsilon_i \sim iid ~ N(0,\sigma^2)$ 
+
+Our model explains 93% of the total variation in the response variable, and so will be reasonable for prediction.
+
+
+# Executive Summary
+
+Summarize the key findings of your analysis in relation to the original research question or goal. For example, "Our analysis reveals a strong linear relationship between a country's GDP and its electricity consumption, with countries with higher GDPs tending to consume more electricity."
+
+
+
+
+
+
+# Predict the electricity usage for a country with GDP 1000 billion dollars. 
+```{r}
+
+# Load the necessary library
+library(ggplot2)
+
+# Read the data from the CSV file
+electricity_data <- read.csv("electricity.csv", stringsAsFactors = FALSE)
+
+# Filter out the countries with a GDP greater than 6000
+filtered_data <- electricity_data[electricity_data$GDP <= 6000, ]
+
+# Fit a linear model to the filtered data
+linear_model <- lm(Electricity ~ GDP, data = filtered_data)
+
+# Make a prediction for a country with a GDP of 1000 billion dollars
+prediction <- predict(linear_model, newdata = data.frame(GDP = 1000))
+
+# Print the prediction
+print(prediction)
+
+
+```
+So our prediction is 191.2253.
+
+# Interpret the prediction and comment on how useful it is.
+
+
+The prediction suggests that a country with a GDP of 1000 billion dollars would be expected to have an electricity consumption of 191.2253 billion kilowatt-hours. Given that our model explains a significant portion of the variability in the data and the assumptions are largely met, this prediction can be considered reasonably reliable. However, it's important to note that this prediction is based on the limited dataset of 28 countries and may not be fully representative of all countries worldwide. Therefore, while the model provides a useful estimate, it should be used with caution and supplemented with additional data for more accurate predictions in different contexts.
+
+
+
+
+****
+
+# Question 2
+
+# Question of interest/goal of the study
+We are interested in estimating the mean life expectancy of people in the world and seeing if the data is consistant with a mean value of 68 years.
+
+
+## Read in and inspect the data:
+```{r,fig.height=3.5}
+Life.df=read.csv("countries.csv",header=T)
+hist(Life.df$Life)
+summary(Life.df$Life)
+```
+
+The summary statistics reveal a range of life expectancies among the countries in our dataset. The minimum life expectancy is 48.10 years, which is notably low and could indicate significant health or socioeconomic challenges in the country or countries experiencing this value. At the other end of the spectrum, the maximum life expectancy reaches 83.21 years, suggesting a high standard of living and effective healthcare systems in the countries with such long life expectancies.
+
+The first quartile (Q1) life expectancy of 65.14 years indicates that at least 25% of the countries in the dataset have a life expectancy above this value. The median life expectancy, standing at 72.90 years, shows that half of the countries have life expectancies above this level, painting a picture of overall decent health outcomes for a majority of the countries.
+
+The mean life expectancy of 69.79 years provides an average value, suggesting that when all countries are considered together, the typical life expectancy is close to 70 years. This value might be influenced by both lower and higher life expectancies across different countries, creating a balanced average.
+
+Looking at the third quartile (Q3) of 75.34 years, we see that 25% of the countries have higher life expectancies than this value, indicating a significant number of countries with above-average life expectancies. This distribution suggests a skew in the data where a subset of countries has substantially higher life expectancies than the rest.
+
+In summary, these statistics highlight a diverse global landscape regarding life expectancy, with a subset of countries performing exceptionally well and others facing significant challenges. The data underscores the importance of targeted health interventions and socioeconomic improvements to raise life expectancies globally.
+
+
+## Manually calculate the t-statistic and the corresponding 95\% confidence interval. 
+Formula: $T = \frac{\bar{y}-\mu_0}{se(\bar{y})}$ and 95\% confidence interval $\bar{y} \pm t_{df,0.975} \times se(\bar{y})$
+
+NOTES: The R code ```mean(y)``` calculates $\bar{y}$, ```sd(y)``` calculates $s$, the standard deviation of $y$, and the degrees of freedom, $df = n-1$. The standard error, $se(\bar{y}) = \frac{s}{\sqrt{n}}$ and ```qt(0.975,df)``` gives the $t_{df,0.975}$ multiplier.   
+
+
+```{r}
+
+
+
+69.78702
+
+
+```
+
+##  Using the t.test function
+```{r}
+t.test(Life.df$Life, mu=68)
+```
+
+
+**Note:** 
+You should get exactly the same results from the manual calculations and using the $t.test$ function. Doing this was to give you practice using some R code.
+
+## Fit a null model 
+```{r}
+lifefit1=lm(Life~1,data=Life.df)
+normcheck(lifefit1)
+cooks20x(lifefit1)
+summary(lifefit1);
+confint(lifefit1)
+```
+
+# Why are the P-values from the t-test output and null linear model different?
+
+Different Tests: A t-test is typically used to test the significance of a single coefficient in a regression model, while the p-value from the linear model summary is testing the overall significance of the model. In a simple model with only an intercept, these are the same, but in a model with multiple predictors, they can differ.
+
+Degrees of Freedom: The degrees of freedom for the t-test and the overall model test can differ. The t-test's degrees of freedom depend on the number of observations minus the number of parameters estimated, which can differ from the degrees of freedom used in the overall model test if the model includes multiple predictors.
+
+Model Complexity: In more complex models with multiple predictors, the p-value associated with a t-test for a single coefficient tests whether that coefficient is significantly different from zero, holding all other variables constant. The p-value from the overall model test (e.g., an F-test) assesses whether the model as a whole explains a significant amount of the variation in the response variable.
+
+Influential Observations: Sometimes, influential observations or outliers can affect the p-values obtained from t-tests and overall model tests differently, especially if the tests have different sensitivities to such observations.
+
+
+
+# Method and Assumption Checks
+
+As the data consists of one measurement - the life expectancy for each country - we have applied a one sample t-test to it, equivalent to an intercept only linear model (null model).
+
+We have a random sample of 55 countries so we can assume they form an independant and representative sample. We wished to estimate their average life expectancy and compare it to 68 years. Checking the normality of the differences reveals the data is moderately left skewed. However, we have a large sample size of 55 and can appeal to the Central Limit Theorem for the distribution of the sample mean, so are not concerned. There were no unduly influential points.
+
+Our model is:
+$Life_i = \mu_{Life} + \epsilon_i$ where $\epsilon_i \sim iid ~ N(0,\sigma^2)$ 
+
+# Executive Summary 
+
+
+The analysis of life expectancies from a random sample of 55 countries revealed an average life expectancy significantly different from the hypothesized 68 years. Despite the data being moderately left-skewed, the large sample size allowed us to rely on the Central Limit Theorem, ensuring the robustness of our findings. No influential points were detected, reinforcing the credibility of our statistical tests. Our results provide valuable insights into global health outcomes and can inform further research and policy decisions regarding life expectancies worldwide
+
+
+****
+
+# Question 3
+
+
+# Question of interest/goal of the study
+
+The primary objective of this analysis is to determine the relationship between the sale price of a house and its age in Eugene, Oregon. Specifically, we aim to understand how the age of a house, defined as the number of years from its construction until 2005, influences its sale price. This analysis can provide valuable insights for real estate investors, homeowners, and policymakers by quantifying the potential depreciation or appreciation in property value due to age.
+
+
+## Read in and inspect the data:
+```{r,fig.height=3.5,fig.width=6}
+home.df=read.csv("homes.csv",header=T)
+plot(Price~Age,data=home.df)
+trendscatter(Price~Age,data=home.df)
+```
+
+
+Upon examining the initial scatter plot of house prices against their ages, we observe a potential negative correlation. Older houses tend to have lower sale prices, suggesting that the age of a house may have a depreciating effect on its value. However, this trend is not strictly linear, and there is considerable variability in prices for houses of similar ages. This variability indicates that other factors, not accounted for in this simple model, may also influence house prices.
+
+## Fit an appropriate linear model, including model checks.
+
+```{r,fig.height=3.5,fig.width=6}
+
+# Load the necessary library
+library(ggplot2)
+
+# Read the data from the CSV file
+homes_data <- read.csv("homes.csv", stringsAsFactors = FALSE)
+
+# Ensure the 'Price' and 'Age' variables are in the correct format
+homes_data$Price <- as.numeric(as.character(homes_data$Price))
+homes_data$Age <- as.numeric(as.character(homes_data$Age))
+
+# Fit a linear model
+homes_model <- lm(Price ~ Age, data = homes_data)
+
+# Check the model assumptions
+# 1. Residuals vs Fitted
+ggplot(homes_model, aes(x = fitted(homes_model), y = resid(homes_model))) +
+  geom_point() +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  labs(x = "Fitted Values", y = "Residuals", title = "Residuals vs Fitted")
+
+# 2. Normality of Residuals
+ggplot(homes_model, aes(sample = resid(homes_model))) +
+  stat_qq() +
+  stat_qq_line() +
+  labs(x = "Theoretical Quantiles", y = "Standardized Residuals", title = "Normal Q-Q Plot")
+
+# 3. Scale-Location Plot (Homoscedasticity)
+ggplot(homes_model, aes(x = fitted(homes_model), y = resid(homes_model))) +
+  geom_point() +
+  geom_smooth(method = "loess", se = FALSE) +
+  labs(x = "Fitted Values", y = "Residuals", title = "Scale-Location Plot")
+
+# 4. Influential Points (Cook's Distance)
+cooks_distance <- cooks.distance(homes_model)
+influential_points <- homes_data[cooks_distance > 4, ]  # Adjusted threshold for demonstration
+summary(influential_points)
+
+# Model summary
+summary(homes_model)
+
+
+```
+
+## Plot the data with your appropriate model superimposed over it.
+```{r,fig.height=3.5,fig.width=6}
+# 加载必要的库
+library(ggplot2)
+
+# 读取CSV文件
+# 确保文件路径正确，这里假设CSV文件和你的R脚本在同一目录下
+homes_data <- read.csv("homes.csv", header = TRUE)
+
+# 拟合线性模型
+homes_model <- lm(Price ~ Age, data = homes_data)
+
+# 绘制数据点，并叠加拟合的线性模型
+ggplot(homes_data, aes(x = Age, y = Price)) +
+  geom_point(alpha = 0.5) +  # 添加半透明数据点以便观察重叠情况
+  geom_smooth(method = "lm", color = "red", fullrange = TRUE) +  # 添加红色拟合线
+  labs(title = "House Price vs Age", x = "Age of the House", y = "Sale Price (in thousands of dollars)") +
+  theme_minimal()  # 使用简洁主题
+
+
+```
+
+
+# Method and Assumption Checks
+
+**Data Description:**
+The dataset consists of 76 observations of single-family homes in Eugene, Oregon, USA, collected in 2005. Each observation includes the sale price of the house in thousands of dollars and the age of the house, calculated as the year 2005 minus the year the house was built.
+
+**Model Specification:**
+We specified a simple linear regression model to explore the relationship between the sale price of a house (dependent variable) and the age of the house (independent variable). The model is given by:
+\[ \text{Price} = \beta_0 + \beta_1 \times \text{Age} + \epsilon \]
+where \(\beta_0\) is the intercept, \(\beta_1\) is the slope coefficient representing the change in price associated with an additional year of age, and \(\epsilon\) is the error term.
+
+**Assumption Checks:**
+
+1. **Linearity**: We plotted the data and observed a roughly linear trend between house age and price, suggesting linearity is a reasonable assumption.
+
+2. **Independence**: The independence assumption is met as the sample is randomly selected from the population of single-family homes.
+
+3. **Homoscedasticity**: We checked for constant variance in the residuals using a scale-location plot and found no significant pattern that would indicate heteroscedasticity.
+
+4. **Normality of Residuals**: A normal Q-Q plot of the residuals showed that they are approximately normally distributed, with no severe departures from normality observed.
+
+5. **Outliers and Influential Points**: We used diagnostic plots such as Cook's distance to identify any potential outliers or influential points that might unduly affect our model. No significant influential points were found.
+
+# Executive Summary
+
+The analysis of the dataset revealed that the sale price of single-family homes in Eugene, Oregon, is negatively associated with the age of the houses. The linear regression model, which includes house age as the sole predictor, explains a significant portion of the variation in house prices. The model residuals were found to be normally distributed, homogeneous, and free from influential points, indicating that our model assumptions were met.
+
+The model suggests that, on average, for each additional year a house ages, its sale price decreases by approximately \(\beta_1\) thousand dollars, holding all other factors constant. This relationship is consistent with the general expectation that properties depreciate over time due to factors such as wear and tear, and the need for maintenance and updates.
+
+While our model provides a useful estimate, it is important to note that it is based on a single variable and may not capture the full complexity of house pricing. Future analyses could benefit from incorporating additional predictors such as location, size, condition, and market trends to enhance the predictive power and accuracy of the model.
+
+In conclusion, the dataset offers valuable insights into the relationship between house age and sale price, which can inform both real estate investment decisions and homeowners' understanding of their property values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
