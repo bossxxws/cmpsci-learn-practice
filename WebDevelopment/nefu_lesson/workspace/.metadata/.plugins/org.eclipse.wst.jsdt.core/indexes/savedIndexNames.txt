@@ -1,17 +1,8 @@
-<<<<<<< HEAD
 INDEX VERSION 1.4+D:\AFiles\cmpsci-learn-practice\WebDevelopment\nefu_lesson\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-101253277.index
-644215874.index
-3317617453.index
-2049322869.index
 1783936870.index
-=======
-INDEX VERSION 1.4+D:\A_codes\cmpsci-learn-practice\WebDevelopment\nefu_lesson\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2255601296.index
-2202338284.index
-492824312.index
-2089173900.index
-4137860113.index
-1187329035.index
+2049322869.index
+3317617453.index
+1297366112.index
+644215874.index
+4170217340.index
 101253277.index
->>>>>>> 50c82bd1d55c6ff5d3ea37d84ca9afdd39dd5bef
