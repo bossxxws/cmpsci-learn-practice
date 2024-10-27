@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>注册页面</title>
+</head>
+<body>
+    <h2>注册页面</h2>
+    <form action="register.jsp" method="post">
+        用户名: <input type="text" name="username" required/><br/>
+        密码: <input type="password" name="password" required/><br/>
+        <input type="submit" value="注册"/>
+    </form>
+
+    <%
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+
+        if (username != null && password != null) {
+            boolean isUsernameValid = username.matches("^[A-Za-z]+$");
+            boolean isPasswordValid = password.matches("^[A-Za-z0-9]{6,20}$");
+
+            if (!isUsernameValid) {
+                out.println("<p style='color:red;'>用户名只允许包含字母。</p>");
+            }
+            if (!isPasswordValid) {
+                out.println("<p style='color:red;'>密码长度必须在6到20之间且只能包含字母和数字。</p>");
+            }
+            if (isUsernameValid && isPasswordValid) {
+                out.println("<p style='color:green;'>注册成功！</p>");
+            }
+        }
+    %>
+</body>
+</html>
