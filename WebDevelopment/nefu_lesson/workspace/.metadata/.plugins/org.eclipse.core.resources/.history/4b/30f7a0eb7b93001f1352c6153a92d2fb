@@ -1,0 +1,79 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>动态菜单示例</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+    /* 简单的样式，用于区分显示和隐藏的表格 */
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<!-- 菜单容器 -->
+<div id="menu">
+    <button class="menu-item" data-target="home-appliances">家电</button>
+    <button class="menu-item" data-target="clothing">服装</button>
+</div>
+
+<!-- 家电表格 -->
+<table id="home-appliances" class="hidden">
+    <tr>
+        <th>家电名称</th>
+        <th>价格</th>
+        <th>品牌</th>
+    </tr>
+    <tr>
+        <td>冰箱</td>
+        <td>2000元</td>
+        <td>海尔</td>
+    </tr>
+    <tr>
+        <td>洗衣机</td>
+        <td>1500元</td>
+        <td>西门子</td>
+    </tr>
+    <!-- 更多家电数据 -->
+</table>
+
+<!-- 服装表格 -->
+<table id="clothing" class="hidden">
+    <tr>
+        <th>服装名称</th>
+        <th>价格</th>
+        <th>品牌</th>
+    </tr>
+    <tr>
+        <td>T恤</td>
+        <td>100元</td>
+        <td>优衣库</td>
+    </tr>
+    <tr>
+        <td>牛仔裤</td>
+        <td>300元</td>
+        <td>李维斯</td>
+    </tr>
+    <!-- 更多服装数据 -->
+</table>
+
+<script>
+$(document).ready(function(){
+    // 点击菜单项时的处理函数
+    $('.menu-item').click(function(){
+        // 隐藏所有表格
+        $('.hidden').addClass('hidden');
+        // 显示点击的菜单项对应的表格
+        $('#' + $(this).data('target')).removeClass('hidden');
+    });
+});
+</script>
+
+</body>
+</html>

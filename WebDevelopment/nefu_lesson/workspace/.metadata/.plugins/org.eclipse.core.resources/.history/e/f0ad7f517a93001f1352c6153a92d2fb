@@ -1,0 +1,94 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>横拉式动态菜单</title>
+    <style>
+        /* 基础样式 */
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+        }
+        .menu > li {
+            display: inline-block;
+            position: relative;
+        }
+        .menu a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+        }
+        /* 子菜单样式 */
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .submenu li {
+            display: block;
+        }
+        .submenu a {
+            padding: 10px 15px;
+            color: black;
+            background-color: #f9f9f9;
+        }
+        /* 鼠标悬停时显示子菜单 */
+        .menu > li:hover > .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="menu">
+    <li>
+        <a href="#">首页</a>
+    </li>
+    <li>
+        <a href="#">产品</a>
+        <ul class="submenu">
+            <li><a href="#">产品1</a></li>
+            <li><a href="#">产品2</a></li>
+            <li><a href="#">产品3</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">关于我们</a>
+        <ul class="submenu">
+            <li><a href="#">团队</a></li>
+            <li><a href="#">历史</a></li>
+            <li><a href="#">愿景</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">联系我们</a>
+    </li>
+</ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    // 鼠标悬停时显示子菜单
+    $('.menu > li').hover(
+        function() {
+            $(this).children('.submenu').stop(true, true).slideDown();
+        },
+        function() {
+            $(this).children('.submenu').stop(true, true).slideUp();
+        }
+    );
+});
+</script>
+</body>
+</html>

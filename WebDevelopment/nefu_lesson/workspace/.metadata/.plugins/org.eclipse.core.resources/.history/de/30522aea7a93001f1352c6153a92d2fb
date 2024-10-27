@@ -1,0 +1,126 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>家电购买菜单</title>
+    <style>
+        /* 基础样式 */
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+        }
+        .menu > li {
+            display: inline-block;
+            position: relative;
+        }
+        .menu a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+        }
+        /* 子菜单样式 */
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .submenu li {
+            display: block;
+        }
+        .submenu a {
+            padding: 10px 15px;
+            color: black;
+            background-color: #f9f9f9;
+            text-decoration: none;
+        }
+        .submenu a:hover {
+            background-color: #eaeaea;
+        }
+        /* 鼠标悬停时显示子菜单 */
+        .menu > li:hover > .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="menu">
+    <li>
+        <a href="#">首页</a>
+    </li>
+    <li>
+        <a href="#">电视</a>
+        <ul class="submenu">
+            <li><a href="tv-led.html">LED电视</a></li>
+            <li><a href="tv-oled.html">OLED电视</a></li>
+            <li><a href="tv-qled.html">QLED电视</a></li>
+            <li><a href="tv-smart.html">智能电视</a></li>
+            <li><a href="tv-all.html">查看所有电视</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">冰箱</a>
+        <ul class="submenu">
+            <li><a href="fridge-single.html">单门冰箱</a></li>
+            <li><a href="fridge-double.html">双门冰箱</a></li>
+            <li><a href="fridge-multi.html">多门冰箱</a></li>
+            <li><a href="fridge-all.html">查看所有冰箱</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">洗衣机</a>
+        <ul class="submenu">
+            <li><a href="washing-machine-top.html">顶开式洗衣机</a></li>
+            <li><a href="washing-machine-front.html">前开式洗衣机</a></li>
+            <li><a href="washing-machine-smart.html">智能洗衣机</a></li>
+            <li><a href="washing-machine-all.html">查看所有洗衣机</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">空调</a>
+        <ul class="submenu">
+            <li><a href="air-conditioner-window.html">窗式空调</a></li>
+            <li><a href="air-conditioner-split.html">分体式空调</a></li>
+            <li><a href="air-conditioner-portable.html">便携式空调</a></li>
+            <li><a href="air-conditioner-all.html">查看所有空调</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">联系我们</a>
+        <ul class="submenu">
+            <li><a href="tel:+123456789">电话支持</a></li>
+            <li><a href="livechat.html">在线客服</a></li>
+            <li><a href="mailto:feedback@example.com">邮件反馈</a></li>
+            <li><a href="contact.html">联系我们获取更多帮助</a></li>
+        </ul>
+    </li>
+</ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    // 鼠标悬停时显示子菜单
+    $('.menu > li').hover(
+        function() {
+            $(this).children('.submenu').stop(true, true).slideDown();
+        },
+        function() {
+            $(this).children('.submenu').stop(true, true).slideUp();
+        }
+    );
+});
+</script>
+</body>
+</html>

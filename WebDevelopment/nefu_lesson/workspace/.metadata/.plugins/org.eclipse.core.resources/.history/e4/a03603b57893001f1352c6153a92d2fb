@@ -1,0 +1,58 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>石头剪子布游戏</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #log { margin-top: 20px; }
+    </style>
+    <script>
+        let playerScore = 0;
+        let computerScore = 0;
+        const log = [];
+
+        function playGame(playerChoice) {
+            const choices = ['石头', '剪子', '布'];
+            const computerChoice = choices[Math.floor(Math.random() * 3)];
+            let result;
+
+            if (playerChoice === computerChoice) {
+                result = '平局';
+            } else if (
+                (playerChoice === '石头' && computerChoice === '剪子') ||
+                (playerChoice === '剪子' && computerChoice === '布') ||
+                (playerChoice === '布' && computerChoice === '石头')
+            ) {
+                result = '你赢了';
+                playerScore++;
+            } else {
+                result = '电脑赢了';
+                computerScore++;
+            }
+
+            const logEntry = `你选择了 ${playerChoice}，电脑选择了 ${computerChoice}，结果: ${result}`;
+            log.push(logEntry);
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            document.getElementById('score').innerText = `你的分数: ${playerScore} | 电脑的分数: ${computerScore}`;
+            document.getElementById('log').innerHTML = log.map(entry => `<div>${entry}</div>`).join('');
+        }
+    </script>
+</head>
+<body>
+    <h1>石头剪子布游戏</h1>
+    <div>
+        <button onclick="playGame('石头')">石头</button>
+        <button onclick="playGame('剪子')">剪子</button>
+        <button onclick="playGame('布')">布</button>
+    </div>
+    <div id="score">你的分数: 0 | 电脑的分数: 0</div>
+    <div id="log"></div>
+</body>
+</html>
