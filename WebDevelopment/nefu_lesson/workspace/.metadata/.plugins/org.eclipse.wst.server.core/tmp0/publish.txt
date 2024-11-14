@@ -1,10 +1,7 @@
 #Tomcat publish data
-<<<<<<< HEAD
-#Fri Oct 25 20:31:36 CST 2024
-=======
-#Sat Oct 26 17:23:52 CST 2024
->>>>>>> f315cf99902bae5bccbc4afd93b466f1fdf28782
+#Thu Nov 14 21:51:34 CST 2024
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
 >>>>>>>=11a3048a924eb1db7e63733f26f3ec4d0b037fad
 org.eclipse.jst.jee.server\:1=C\:\\apache-tomcat-9.0.95\\wtpwebapps\\1
+org.eclipse.jst.jee.server\:2=C\:\\apache-tomcat-9.0.95\\wtpwebapps\\2

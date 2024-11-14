@@ -162,7 +162,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-     <Context docBase="D:\AFiles\cmpsci-learn-practice\WebDevelopment\nefu_lesson\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/></Host>
+     <Context docBase="D:\A_codes\cmpsci-learn-practice\WebDevelopment\nefu_lesson\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\webapps\ROOT" path="" reloadable="false"/></Host>
     </Engine>
   </Service>
 </Server>
