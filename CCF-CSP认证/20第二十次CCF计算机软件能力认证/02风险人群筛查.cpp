@@ -67,6 +67,7 @@ int main()
 			}
 		}
 	}
+	
 	cout<<cnt[1]<<endl;
 	cout<<r1<<endl<<r2;
 	

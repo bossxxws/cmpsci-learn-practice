@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
 * Servlet Filter implementation class filter1
 */
-@WebFilter("/*")
+@WebFilter("/loginservlet")
 public class filter1 implements Filter {
 private String str="loginservlet";
 /**
