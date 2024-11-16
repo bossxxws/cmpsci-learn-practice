@@ -63,7 +63,9 @@
     "iostream": "cpp",
     "random": "cpp",
     "cmath": "cpp",
-    "unordered_map": "cpp"
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "cstdlib": "cpp"
   },
   "cSpell.words": [
     "cnts"

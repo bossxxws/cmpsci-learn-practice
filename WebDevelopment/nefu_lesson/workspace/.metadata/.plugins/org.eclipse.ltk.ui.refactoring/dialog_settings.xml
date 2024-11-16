@@ -5,8 +5,14 @@
 		<item key="height" value="400"/>
 	</section>
 	<section name="RefactoringStatusDialog">
+<<<<<<< HEAD
 		<item key="DIALOG_WIDTH" value="816"/>
 		<item key="DIALOG_HEIGHT" value="496"/>
 		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
+=======
+		<item key="DIALOG_WIDTH" value="813"/>
+		<item key="DIALOG_HEIGHT" value="485"/>
+		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
+>>>>>>> cf52a1f39ec414fa7db0c7efa03c5963a925e9a8
 	</section>
 </section>

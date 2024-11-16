@@ -2,7 +2,15 @@
 <launchConfiguration type="org.eclipse.wst.server.ui.launchConfigurationType">
     <stringAttribute key="client-id" value="org.eclipse.wst.server.ui.web"/>
     <stringAttribute key="launchable-adapter-id" value="org.eclipse.jst.server.tomcat.web"/>
+<<<<<<< HEAD:WebDevelopment/nefu_lesson/workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/_e实验_e05实验五10_vote.jsp.launch
     <stringAttribute key="module-artifact" value="org.eclipse.jst.jee.server:1///e实验/e05实验五10/vote.jsp"/>
+=======
+<<<<<<<< HEAD:WebDevelopment/nefu_lesson/workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/_e实验_e03实验三07.jsp.launch
+    <stringAttribute key="module-artifact" value="org.eclipse.jst.jee.server:1///e实验/e03实验三07.jsp"/>
+========
+    <stringAttribute key="module-artifact" value="org.eclipse.jst.jee.server:1///e实验/e04实验四11.jsp"/>
+>>>>>>>> f315cf99902bae5bccbc4afd93b466f1fdf28782:WebDevelopment/nefu_lesson/workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/_e实验_e04实验四11.jsp.launch
+>>>>>>> cf52a1f39ec414fa7db0c7efa03c5963a925e9a8:WebDevelopment/nefu_lesson/workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/_e实验_e04实验四11.jsp.launch
     <stringAttribute key="module-artifact-class" value="org.eclipse.wst.server.core.util.WebResource"/>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
         <listEntry value="/1"/>
