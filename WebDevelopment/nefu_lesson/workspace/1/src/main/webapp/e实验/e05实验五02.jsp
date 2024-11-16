@@ -1,0 +1,95 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>用户注册</title>
+    <script>
+        function test() {
+            var p1 = document.zc.pas1.value;
+            var p2 = document.zc.pas2.value;
+            var username = document.zc.yhm.value;
+
+            //alert("用户名: " + username);
+           // alert("密码: " + p1);
+            //alert("确认密码: " + p2);
+            //alert("性别 女: " + document.zc.sex[0].checked);
+            //alert("性别 男: " + document.zc.sex[1].checked);
+            //alert("职业: " + document.zc.id.value);
+            //alert("个人简介: " + document.zc.intr.value);
+
+            if (p1 !== p2) {
+                alert("用户名密码不一致");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <style type="text/css">
+        div {font-size: 35px; text-align: center;}
+    </style>
+</head>
+<body>
+    <h1 align="center">注册</h1>
+    <form name="zc" onsubmit="return test()" action="processor.jsp" method="post">
+        <table align="center" border="1" width="800">
+            <tr>
+                <td><div style="font-family:隶书;color:blue">用户名：</div></td>
+                <td><input type="text" name="yhm" size="20" required></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" name="pas1" required></td>
+            </tr>
+            <tr>
+                <td>确认密码：</td>
+                <td><input type="password" name="pas2" required></td>
+            </tr>
+            <tr>
+                <td>手机号：</td>
+                <td><input type="text" name="tel"></td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <input type="radio" name="sex" value="女" checked>女
+                    <input type="radio" name="sex" value="男">男
+                </td>
+            </tr>
+            <tr>
+                <td>爱好：</td>
+                <td>
+                    <input type="checkbox" name="hobby">唱歌<br>
+                    <input type="checkbox" name="hobby">跳舞<br>
+                    <input type="checkbox" name="hobby" checked>足球<br>
+                    <input type="checkbox" name="hobby">篮球<br>
+                </td>
+            </tr>
+            <tr>
+                <td>照片：</td>
+                <td><input type="file" name="photo"></td>
+            </tr>
+            <tr>
+                <td>职业:</td>
+                <td>
+                    <select name="id">
+                        <option value="teacher">教师</option>
+                        <option value="student">学生</option>
+                        <option value="engineer">工程师</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>自我介绍:</td>
+                <td><textarea cols="60" rows="5" name="intr"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="提交">&nbsp;&nbsp;
+                    <input type="reset" value="重置">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
