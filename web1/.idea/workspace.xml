@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77a447c0-e2df-48fd-a6a5-7453cd7a8284" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../CCF-CSP认证/0013年12月CCF计算机软件能力认证/01出现次数最多的数.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CCF-CSP认证/0013年12月CCF计算机软件能力认证/01出现次数最多的数.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CCF-CSP认证/0013年12月CCF计算机软件能力认证/02ISBN码.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CCF-CSP认证/0013年12月CCF计算机软件能力认证/02ISBN码.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CCF-CSP认证/0013年12月CCF计算机软件能力认证/03最大的矩形.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CCF-CSP认证/0013年12月CCF计算机软件能力认证/04有趣的数.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CCF-CSP认证/0013年12月CCF计算机软件能力认证/05I'm stuck!.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CCF-CSP认证/0013年12月CCF计算机软件能力认证/05I'm stuck!.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CCF-CSP认证/0013年12月CCF计算机软件能力认证/tets.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CCF-CSP认证/0013年12月CCF计算机软件能力认证/tets.exe" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\A_codes\cmpsci-learn-practice\web1\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven-repository" />
+        <option name="mavenHome" value="C:/apache-maven-3.8.1" />
+        <option name="userSettingsFile" value="C:\apache-maven-3.8.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="2p6hcxldDewsV10bgsrGIMczYF7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77a447c0-e2df-48fd-a6a5-7453cd7a8284" name="Default Changelist" comment="" />
+      <created>1732092515540</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732092515540</updated>
+      <workItem from="1732092518827" duration="476000" />
+      <workItem from="1732093044114" duration="114000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
