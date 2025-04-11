@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>三角函数诱导公式口诀解析</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; }
+        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; }
+        h3 { color: #34495e; }
+        .card { 
+            background: #f9f9f9; 
+            border-left: 4px solid #3498db; 
+            padding: 15px; 
+            margin: 15px 0; 
+        }
+        .example { 
+            background: #f0f8ff; 
+            padding: 10px; 
+            border-radius: 5px; 
+            margin: 10px 0;
+        }
+        .highlight { color: #e74c3c; font-weight: bold; }
+        .keyword { color: #2980b9; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>「奇变偶不变，符号看象限」解析</h2>
+    
+    <div class="card">
+        <h3>一、口诀内涵</h3>
+        <p>这是三角函数诱导公式的简化记忆规则，用于将任意角的三角函数转化为锐角三角函数[2,4](@ref)。</p>
+        
+        <div class="example">
+            <h4>核心逻辑：</h4>
+            <ul>
+                <li><span class="keyword">奇变偶不变</span>：当角变形为<span class="highlight">n·(π/2)±α</span>时，若<span class="highlight">n为奇数</span>则函数名改变（sin↔cos，tan↔cot），若为偶数则函数名不变[4,6](@ref)。</li>
+                <li><span class="keyword">符号看象限</span>：假设α为锐角，根据变形后的角所在象限确定结果的符号[5,7](@ref)。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>二、操作步骤</h3>
+        <ol>
+            <li><strong>拆分角度</strong>：将目标角写成<span class="highlight">n·(π/2) ± α</span>形式（如270°−α = 3·(π/2)−α）[4](@ref)；</li>
+            <li><strong>判断奇偶</strong>：若n为奇数，则函数名转换（如cos→sin），偶数则保留原名[6,8](@ref)；</li>
+            <li><strong>确定象限</strong>：根据变形后的角所在象限，结合<span class="highlight">“一全正，二正弦，三正切，四余弦”</span>判断符号[5,7](@ref)。</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h3>三、经典示例</h3>
+        <div class="example">
+            <p><strong>示例1：</strong>cos(270°−α) = −sinα</p>
+            <ul>
+                <li>拆分：270°=3×(π/2)，n=3为奇数→函数名变（cos→sin）[4](@ref)；</li>
+                <li>象限：270°−α在第三象限→余弦为负→结果带负号[7,10](@ref)。</li>
+            </ul>
+        </div>
+        
+        <div class="example">
+            <p><strong>示例2：</strong>sin(180°+α) = −sinα</p>
+            <ul>
+                <li>拆分：180°=2×(π/2)，n=2为偶数→函数名不变[6](@ref)；</li>
+                <li>象限：180°+α在第三象限→正弦为负→结果带负号[2,5](@ref)。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>四、常见误区</h3>
+        <ul>
+            <li>❌ 混淆角度的奇偶性与n的奇偶性（如误将90°本身视为“奇”）[4,9](@ref)；</li>
+            <li>❌ 符号判断错误（如第二象限的正弦为正，但变形后可能需加负号）[5,10](@ref)；</li>
+            <li>❌ 忽略α需始终视为锐角的前提[7,10](@ref)。</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -12,7 +12,7 @@ void binarysearch(int x,int q[],int n)
 	while(l<r)
 	{
 		int mid =l+r>>1;
-		if(q[l]>=x)r=mid;
+		if(q[mid]>=x)r=mid;
 		else l=mid+1;
 	}
 	if(q[l]!=x)cout<<"error"<<endl;
@@ -22,7 +22,7 @@ void binarysearch(int x,int q[],int n)
 	while(l<r)
 	{
 		int mid=l+r+1>>1;//+1 is very important becase of the boundary problem
-		if(q[l]<=x)l=mid;
+		if(q[mid]<=x)l=mid;
 		else r=mid-1;
 	}
 	if(q[l]==x)cout<<l;

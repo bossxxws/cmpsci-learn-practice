@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.highcom.admin.dao.HomeLoginMapper">
+
+    <select id="login" resultType="com.highcom.admin.pojo.Company" parameterType="java.util.Map">
+        select * from company where userName = #{userName} and password = #{password}
+    </select>
+
+    <select id="queryCompanyByName" resultType="com.highcom.admin.pojo.Company" parameterType="String">
+        select * from company where userName=#{userName}
+    </select>
+    
+    <update id="updatePwd" parameterType="java.util.Map">
+        update company set password=#{password}, modifyTime=#{modifyTime} where comid = #{comid}
+    </update>
+</mapper>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.highcom.admin.dao.OrdersMapper">
+  <resultMap id="BaseResultMap" type="com.highcom.admin.pojo.Orders">
+    <!--@mbg.generated-->
+    <!--@Table orders-->
+    <id column="orderid" jdbcType="INTEGER" property="orderid" />
+    <result column="orderNamech" jdbcType="VARCHAR" property="ordernamech" />
+    <result column="orderNameen" jdbcType="VARCHAR" property="ordernameen" />
+    <result column="summary" jdbcType="VARCHAR" property="summary" />
+    <result column="businessid" jdbcType="INTEGER" property="businessid" />
+    <result column="publishtime" jdbcType="DATE" property="publishtime" />
+    <result column="img1" jdbcType="VARCHAR" property="img1" />
+    <result column="img2" jdbcType="VARCHAR" property="img2" />
+    <result column="img3" jdbcType="VARCHAR" property="img3" />
+    <result column="clickcount" jdbcType="INTEGER" property="clickcount" />
+    <result column="goodsname" jdbcType="VARCHAR" property="goodsname" />
+    <result column="number" jdbcType="INTEGER" property="number" />
+    <result column="categoryid" jdbcType="INTEGER" property="categoryid" />
+    <result column="specifications" jdbcType="VARCHAR" property="specifications" />
+    <result column="price" jdbcType="DOUBLE" property="price" />
+    <result column="supplytime" jdbcType="DATE" property="supplytime" />
+    <result column="comid" jdbcType="VARCHAR" property="comid" />
+    <result column="details" jdbcType="LONGVARCHAR" property="details" />
+    <result column="recomflag" jdbcType="INTEGER" property="recomflag" />
+    <result column="publishflag" jdbcType="INTEGER" property="publishflag" />
+    <result column="tradeflag" jdbcType="VARCHAR" property="tradeflag" />
+    <result column="supplyflag" jdbcType="INTEGER" property="supplyflag" />
+    <result column="delflag" jdbcType="INTEGER" property="delflag" />
+    <result column="updatetime" jdbcType="TIMESTAMP" property="updatetime" />
+    <result column="comname" jdbcType="VARCHAR" property="comname" />
+    <result column="category" jdbcType="VARCHAR" property="category" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    orderid, orderNamech, orderNameen, summary, businessid, publishtime, img1, img2, 
+    img3, clickcount, goodsname, `number`, categoryid, specifications, price, supplytime, 
+    comid, details, recomflag, publishflag, tradeflag, supplyflag, delflag, updatetime, 
+    comname, category
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from orders
+    where orderid = #{orderid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from orders
+    where orderid = #{orderid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="orderid" keyProperty="orderid" parameterType="com.highcom.admin.pojo.Orders" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into orders (orderNamech, orderNameen, summary, 
+      businessid, publishtime, img1, 
+      img2, img3, clickcount, 
+      goodsname, `number`, categoryid, 
+      specifications, price, supplytime, 
+      comid, details, recomflag, 
+      publishflag, tradeflag, supplyflag, 
+      delflag, updatetime, comname, 
+      category)
+    values (#{ordernamech,jdbcType=VARCHAR}, #{ordernameen,jdbcType=VARCHAR}, #{summary,jdbcType=VARCHAR}, 
+      #{businessid,jdbcType=INTEGER}, #{publishtime,jdbcType=DATE}, #{img1,jdbcType=VARCHAR}, 
+      #{img2,jdbcType=VARCHAR}, #{img3,jdbcType=VARCHAR}, #{clickcount,jdbcType=INTEGER}, 
+      #{goodsname,jdbcType=VARCHAR}, #{number,jdbcType=INTEGER}, #{categoryid,jdbcType=INTEGER}, 
+      #{specifications,jdbcType=VARCHAR}, #{price,jdbcType=DOUBLE}, #{supplytime,jdbcType=DATE}, 
+      #{comid,jdbcType=VARCHAR}, #{details,jdbcType=LONGVARCHAR}, #{recomflag,jdbcType=INTEGER}, 
+      #{publishflag,jdbcType=INTEGER}, #{tradeflag,jdbcType=VARCHAR}, #{supplyflag,jdbcType=INTEGER}, 
+      #{delflag,jdbcType=INTEGER}, #{updatetime,jdbcType=TIMESTAMP}, #{comname,jdbcType=VARCHAR}, 
+      #{category,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="orderid" keyProperty="orderid" parameterType="com.highcom.admin.pojo.Orders" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into orders
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="ordernamech != null">
+        orderNamech,
+      </if>
+      <if test="ordernameen != null">
+        orderNameen,
+      </if>
+      <if test="summary != null">
+        summary,
+      </if>
+      <if test="businessid != null">
+        businessid,
+      </if>
+      <if test="publishtime != null">
+        publishtime,
+      </if>
+      <if test="img1 != null">
+        img1,
+      </if>
+      <if test="img2 != null">
+        img2,
+      </if>
+      <if test="img3 != null">
+        img3,
+      </if>
+      <if test="clickcount != null">
+        clickcount,
+      </if>
+      <if test="goodsname != null">
+        goodsname,
+      </if>
+      <if test="number != null">
+        `number`,
+      </if>
+      <if test="categoryid != null">
+        categoryid,
+      </if>
+      <if test="specifications != null">
+        specifications,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="supplytime != null">
+        supplytime,
+      </if>
+      <if test="comid != null">
+        comid,
+      </if>
+      <if test="details != null">
+        details,
+      </if>
+      <if test="recomflag != null">
+        recomflag,
+      </if>
+      <if test="publishflag != null">
+        publishflag,
+      </if>
+      <if test="tradeflag != null">
+        tradeflag,
+      </if>
+      <if test="supplyflag != null">
+        supplyflag,
+      </if>
+      <if test="delflag != null">
+        delflag,
+      </if>
+      <if test="updatetime != null">
+        updatetime,
+      </if>
+      <if test="comname != null">
+        comname,
+      </if>
+      <if test="category != null">
+        category,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="ordernamech != null">
+        #{ordernamech,jdbcType=VARCHAR},
+      </if>
+      <if test="ordernameen != null">
+        #{ordernameen,jdbcType=VARCHAR},
+      </if>
+      <if test="summary != null">
+        #{summary,jdbcType=VARCHAR},
+      </if>
+      <if test="businessid != null">
+        #{businessid,jdbcType=INTEGER},
+      </if>
+      <if test="publishtime != null">
+        #{publishtime,jdbcType=DATE},
+      </if>
+      <if test="img1 != null">
+        #{img1,jdbcType=VARCHAR},
+      </if>
+      <if test="img2 != null">
+        #{img2,jdbcType=VARCHAR},
+      </if>
+      <if test="img3 != null">
+        #{img3,jdbcType=VARCHAR},
+      </if>
+      <if test="clickcount != null">
+        #{clickcount,jdbcType=INTEGER},
+      </if>
+      <if test="goodsname != null">
+        #{goodsname,jdbcType=VARCHAR},
+      </if>
+      <if test="number != null">
+        #{number,jdbcType=INTEGER},
+      </if>
+      <if test="categoryid != null">
+        #{categoryid,jdbcType=INTEGER},
+      </if>
+      <if test="specifications != null">
+        #{specifications,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="supplytime != null">
+        #{supplytime,jdbcType=DATE},
+      </if>
+      <if test="comid != null">
+        #{comid,jdbcType=VARCHAR},
+      </if>
+      <if test="details != null">
+        #{details,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="recomflag != null">
+        #{recomflag,jdbcType=INTEGER},
+      </if>
+      <if test="publishflag != null">
+        #{publishflag,jdbcType=INTEGER},
+      </if>
+      <if test="tradeflag != null">
+        #{tradeflag,jdbcType=VARCHAR},
+      </if>
+      <if test="supplyflag != null">
+        #{supplyflag,jdbcType=INTEGER},
+      </if>
+      <if test="delflag != null">
+        #{delflag,jdbcType=INTEGER},
+      </if>
+      <if test="updatetime != null">
+        #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="comname != null">
+        #{comname,jdbcType=VARCHAR},
+      </if>
+      <if test="category != null">
+        #{category,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.highcom.admin.pojo.Orders">
+    <!--@mbg.generated-->
+    update orders
+    <set>
+      <if test="ordernamech != null">
+        orderNamech = #{ordernamech,jdbcType=VARCHAR},
+      </if>
+      <if test="ordernameen != null">
+        orderNameen = #{ordernameen,jdbcType=VARCHAR},
+      </if>
+      <if test="summary != null">
+        summary = #{summary,jdbcType=VARCHAR},
+      </if>
+      <if test="businessid != null">
+        businessid = #{businessid,jdbcType=INTEGER},
+      </if>
+      <if test="publishtime != null">
+        publishtime = #{publishtime,jdbcType=DATE},
+      </if>
+      <if test="img1 != null">
+        img1 = #{img1,jdbcType=VARCHAR},
+      </if>
+      <if test="img2 != null">
+        img2 = #{img2,jdbcType=VARCHAR},
+      </if>
+      <if test="img3 != null">
+        img3 = #{img3,jdbcType=VARCHAR},
+      </if>
+      <if test="clickcount != null">
+        clickcount = #{clickcount,jdbcType=INTEGER},
+      </if>
+      <if test="goodsname != null">
+        goodsname = #{goodsname,jdbcType=VARCHAR},
+      </if>
+      <if test="number != null">
+        `number` = #{number,jdbcType=INTEGER},
+      </if>
+      <if test="categoryid != null">
+        categoryid = #{categoryid,jdbcType=INTEGER},
+      </if>
+      <if test="specifications != null">
+        specifications = #{specifications,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="supplytime != null">
+        supplytime = #{supplytime,jdbcType=DATE},
+      </if>
+      <if test="comid != null">
+        comid = #{comid,jdbcType=VARCHAR},
+      </if>
+      <if test="details != null">
+        details = #{details,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="recomflag != null">
+        recomflag = #{recomflag,jdbcType=INTEGER},
+      </if>
+      <if test="publishflag != null">
+        publishflag = #{publishflag,jdbcType=INTEGER},
+      </if>
+      <if test="tradeflag != null">
+        tradeflag = #{tradeflag,jdbcType=VARCHAR},
+      </if>
+      <if test="supplyflag != null">
+        supplyflag = #{supplyflag,jdbcType=INTEGER},
+      </if>
+      <if test="delflag != null">
+        delflag = #{delflag,jdbcType=INTEGER},
+      </if>
+      <if test="updatetime != null">
+        updatetime = #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="comname != null">
+        comname = #{comname,jdbcType=VARCHAR},
+      </if>
+      <if test="category != null">
+        category = #{category,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where orderid = #{orderid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.highcom.admin.pojo.Orders">
+    <!--@mbg.generated-->
+    update orders
+    set orderNamech = #{ordernamech,jdbcType=VARCHAR},
+      orderNameen = #{ordernameen,jdbcType=VARCHAR},
+      summary = #{summary,jdbcType=VARCHAR},
+      businessid = #{businessid,jdbcType=INTEGER},
+      publishtime = #{publishtime,jdbcType=DATE},
+      img1 = #{img1,jdbcType=VARCHAR},
+      img2 = #{img2,jdbcType=VARCHAR},
+      img3 = #{img3,jdbcType=VARCHAR},
+      clickcount = #{clickcount,jdbcType=INTEGER},
+      goodsname = #{goodsname,jdbcType=VARCHAR},
+      `number` = #{number,jdbcType=INTEGER},
+      categoryid = #{categoryid,jdbcType=INTEGER},
+      specifications = #{specifications,jdbcType=VARCHAR},
+      price = #{price,jdbcType=DOUBLE},
+      supplytime = #{supplytime,jdbcType=DATE},
+      comid = #{comid,jdbcType=VARCHAR},
+      details = #{details,jdbcType=LONGVARCHAR},
+      recomflag = #{recomflag,jdbcType=INTEGER},
+      publishflag = #{publishflag,jdbcType=INTEGER},
+      tradeflag = #{tradeflag,jdbcType=VARCHAR},
+      supplyflag = #{supplyflag,jdbcType=INTEGER},
+      delflag = #{delflag,jdbcType=INTEGER},
+      updatetime = #{updatetime,jdbcType=TIMESTAMP},
+      comname = #{comname,jdbcType=VARCHAR},
+      category = #{category,jdbcType=VARCHAR}
+    where orderid = #{orderid,jdbcType=INTEGER}
+  </update>
+</mapper>

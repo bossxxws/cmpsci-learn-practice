@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="gjmycg:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b47fc51-3f11-48d1-8169-9bf99b4eb9af" name="Changes" comment="login页面">
+      <change beforePath="$PROJECT_DIR$/../../../gjmycg/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../gjmycg/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../gjmycg/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../gjmycg/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../gjmycg/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../gjmycg/gjmycg.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../gjmycg/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web02/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web02/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web02/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web02/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web02/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web02/.mvn/jvm.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web02/.mvn/maven.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web02/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web02/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web02/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web02/web02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../webHK/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../webHK/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../webHK/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../webHK/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../webHK/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../webHK/.mvn/jvm.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../webHK/.mvn/maven.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../webHK/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../webHK/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../webHK/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../webHK/webHK.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web_HK/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web_HK/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web_HK/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web_HK/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web_HK/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web_HK/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web_HK/web_HK.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar!/javax/servlet/GenericServlet.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/druid-1.2.9.jar!/com/alibaba/druid/pool/DruidDataSource.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\apache-maven-3.9.9-bin\apache-maven-3.9.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2pI9o0YtpwqntE374XEucXsfBvM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Maven.gjmycg [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gjmycg [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gjmycg [idea:idea].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gjmycg [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gjmycg [test].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat 服务器.Tomcat.executor&quot;: &quot;Run&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/A_codes/cmpsci-learn-practice/HKPractice/gjmycgmf/gjmycg&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
+    ],
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.highcom.admin.service.Impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\A_codes\gjmycg\src\main\webapp\home_detail" />
+      <recent name="D:\A_codes\gjmycg\src\main\webapp" />
+      <recent name="D:\javacode\gjmycg\src\main\java\com\highcom\admin\pojo" />
+      <recent name="D:\javacode\gjmycg\src\main\java\com\highcom\config" />
+      <recent name="D:\javacode\gjmycg\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn idea:idea" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.81" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:7070/admin" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="gjmycg:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="a138a275-5762-45c5-b75e-009c2b7bb472" />
+        <option name="HTTP_PORT" value="7070" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2996" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="gjmycg:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b47fc51-3f11-48d1-8169-9bf99b4eb9af" name="Changes" comment="" />
+      <created>1732442894913</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732442894913</updated>
+      <workItem from="1732442896587" duration="4597000" />
+      <workItem from="1732511326889" duration="312000" />
+      <workItem from="1732538849007" duration="3279000" />
+      <workItem from="1732874755469" duration="5695000" />
+      <workItem from="1732881104010" duration="3021000" />
+      <workItem from="1732884160676" duration="915000" />
+      <workItem from="1732885104030" duration="134000" />
+      <workItem from="1732885327173" duration="175000" />
+      <workItem from="1732885513848" duration="362000" />
+      <workItem from="1732885891497" duration="1296000" />
+      <workItem from="1732887531993" duration="970000" />
+      <workItem from="1732888535096" duration="256000" />
+      <workItem from="1732888801045" duration="60000" />
+      <workItem from="1732971787548" duration="99000" />
+      <workItem from="1733015202735" duration="3677000" />
+      <workItem from="1733022376901" duration="4844000" />
+      <workItem from="1733030611576" duration="5147000" />
+      <workItem from="1733036817464" duration="457000" />
+      <workItem from="1733041892042" duration="1998000" />
+      <workItem from="1733191444802" duration="5423000" />
+      <workItem from="1733201095685" duration="6286000" />
+      <workItem from="1733230861243" duration="5406000" />
+      <workItem from="1733318811112" duration="3146000" />
+      <workItem from="1733371160465" duration="4000" />
+      <workItem from="1733386627178" duration="955000" />
+      <workItem from="1733399176860" duration="198000" />
+      <workItem from="1733477171647" duration="7333000" />
+      <workItem from="1733487398867" duration="300000" />
+      <workItem from="1733493167590" duration="376000" />
+      <workItem from="1733532176315" duration="1007000" />
+      <workItem from="1733535995307" duration="1144000" />
+      <workItem from="1733539710597" duration="422000" />
+      <workItem from="1733540423430" duration="946000" />
+      <workItem from="1733543300139" duration="8786000" />
+      <workItem from="1733563440682" duration="872000" />
+      <workItem from="1733623616502" duration="6978000" />
+      <workItem from="1733637421798" duration="3622000" />
+      <workItem from="1733642881232" duration="696000" />
+      <workItem from="1733652872797" duration="13000" />
+      <workItem from="1733751182222" duration="2111000" />
+      <workItem from="1733790821394" duration="42000" />
+      <workItem from="1733793920837" duration="1596000" />
+      <workItem from="1733797340074" duration="2073000" />
+      <workItem from="1733803523839" duration="231000" />
+      <workItem from="1733805589438" duration="152000" />
+      <workItem from="1733805749274" duration="235000" />
+      <workItem from="1733809507950" duration="922000" />
+      <workItem from="1733810446211" duration="2237000" />
+      <workItem from="1733812792085" duration="222000" />
+      <workItem from="1733820737455" duration="1057000" />
+      <workItem from="1733837553571" duration="1058000" />
+      <workItem from="1734004262677" duration="510000" />
+      <workItem from="1734069371504" duration="3130000" />
+      <workItem from="1734074376031" duration="189000" />
+      <workItem from="1734074602628" duration="37000" />
+      <workItem from="1734074648619" duration="3658000" />
+      <workItem from="1734078353874" duration="8213000" />
+      <workItem from="1734143160086" duration="5432000" />
+      <workItem from="1734149765876" duration="4560000" />
+      <workItem from="1734154613211" duration="6654000" />
+      <workItem from="1734166086759" duration="2558000" />
+      <workItem from="1734170670800" duration="5626000" />
+      <workItem from="1734177518641" duration="14000" />
+      <workItem from="1734177555150" duration="144000" />
+      <workItem from="1734177713725" duration="126000" />
+      <workItem from="1734181313725" duration="4082000" />
+      <workItem from="1734231711827" duration="13723000" />
+      <workItem from="1734252067038" duration="1580000" />
+      <workItem from="1735043800893" duration="34000" />
+      <workItem from="1735043879389" duration="25000" />
+    </task>
+    <task id="LOCAL-00001" summary=":)">
+      <option name="closed" value="true" />
+      <created>1732446986791</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732446986791</updated>
+    </task>
+    <task id="LOCAL-00002" summary=":)">
+      <option name="closed" value="true" />
+      <created>1732447093718</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732447093718</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="2022214460董前" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value=":)" />
+    <MESSAGE value="login页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="login页面" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
