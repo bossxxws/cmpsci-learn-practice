@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.highcom.admin.dao.AdminInfoMapper">
+
+    <!-- 使用 Map 参数来传递 adminName 和 password -->
+    <select id="login" resultType="com.highcom.admin.pojo.AdminInfo" parameterType="java.util.Map">
+        SELECT * FROM admininfo WHERE adminName = #{adminName} AND password = #{password}
+    </select>
+
+    <update id="updatePwd" parameterType="java.util.Map">
+        update admininfo set password=#{password} where id = #{id}
+    </update>
+
+    <select id="queryAdminInfoByName" resultType="com.highcom.admin.pojo.AdminInfo">
+        select * from admininfo where adminName=#{adminName}
+    </select>
+</mapper>
+

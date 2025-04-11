@@ -61,7 +61,7 @@ int main()
         // cout << endl;
     } // 读入S藏宝图
 
-    // 依次枚举可疑点
+    // 依次枚举可疑点!
     for (auto t : se)
     {
         int x = t.first;

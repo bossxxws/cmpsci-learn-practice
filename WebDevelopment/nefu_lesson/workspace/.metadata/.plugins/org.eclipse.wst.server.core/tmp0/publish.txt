@@ -1,3 +1,18 @@
 #Tomcat publish data
+<<<<<<< HEAD
 #Sat Nov 16 08:58:06 CST 2024
+=======
+<<<<<<< HEAD
+#Sat Nov 16 15:13:15 CST 2024
+=======
+<<<<<<< HEAD
+#Sat Oct 26 22:02:45 CST 2024
+=======
+#Thu Nov 14 21:51:34 CST 2024
+>>>>>>> cf52a1f39ec414fa7db0c7efa03c5963a925e9a8
+>>>>>>> ff8fdb28dc82169fb67b315cdf1cdd89307964b3
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=11a3048a924eb1db7e63733f26f3ec4d0b037fad
+>>>>>>> 010ffd5d0fae7fea3f20b65d0df73ca3208bf1a9
 org.eclipse.jst.jee.server\:1=C\:\\apache-tomcat-9.0.95\\wtpwebapps\\1
