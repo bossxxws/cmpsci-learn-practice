@@ -3,6 +3,9 @@
     <launchGroup id="org.eclipse.debug.ui.launchGroup.debug">
         <mruHistory>
 <<<<<<< HEAD
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;_04.jsp&quot;/&gt;&#13;&#10;"/>
+=======
+<<<<<<< HEAD
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;_login.html&quot;/&gt;&#13;&#10;"/>
 =======
 <<<<<<< HEAD
@@ -10,6 +13,7 @@
 =======
 >>>>>>> cf52a1f39ec414fa7db0c7efa03c5963a925e9a8
 >>>>>>> ff8fdb28dc82169fb67b315cdf1cdd89307964b3
+>>>>>>> 010ffd5d0fae7fea3f20b65d0df73ca3208bf1a9
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;Tomcat v9.0 Server at localhost&quot;/&gt;&#13;&#10;"/>
         </mruHistory>
         <favorites/>
@@ -17,6 +21,9 @@
     <launchGroup id="org.eclipse.debug.ui.launchGroup.profile">
         <mruHistory>
 <<<<<<< HEAD
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;_04.jsp&quot;/&gt;&#13;&#10;"/>
+=======
+<<<<<<< HEAD
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;_login.html&quot;/&gt;&#13;&#10;"/>
 =======
 <<<<<<< HEAD
@@ -24,6 +31,7 @@
 =======
 >>>>>>> cf52a1f39ec414fa7db0c7efa03c5963a925e9a8
 >>>>>>> ff8fdb28dc82169fb67b315cdf1cdd89307964b3
+>>>>>>> 010ffd5d0fae7fea3f20b65d0df73ca3208bf1a9
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;Tomcat v9.0 Server at localhost&quot;/&gt;&#13;&#10;"/>
         </mruHistory>
         <favorites/>
@@ -39,6 +47,9 @@
     <launchGroup id="org.eclipse.debug.ui.launchGroup.run">
         <mruHistory>
 <<<<<<< HEAD
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;_04.jsp&quot;/&gt;&#13;&#10;"/>
+=======
+<<<<<<< HEAD
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;_login.html&quot;/&gt;&#13;&#10;"/>
 =======
 <<<<<<< HEAD
@@ -46,6 +57,7 @@
 =======
 >>>>>>> cf52a1f39ec414fa7db0c7efa03c5963a925e9a8
 >>>>>>> ff8fdb28dc82169fb67b315cdf1cdd89307964b3
+>>>>>>> 010ffd5d0fae7fea3f20b65d0df73ca3208bf1a9
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;Tomcat v9.0 Server at localhost&quot;/&gt;&#13;&#10;"/>
         </mruHistory>
         <favorites/>
