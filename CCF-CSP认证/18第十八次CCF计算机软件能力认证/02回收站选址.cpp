@@ -5,6 +5,7 @@ using namespace std;
 const int N = 1e3 + 3;
 
 #define x first
+
 #define y second
 
 typedef pair<int, int> PII;
