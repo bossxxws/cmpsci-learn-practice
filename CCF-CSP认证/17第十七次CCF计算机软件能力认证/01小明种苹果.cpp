@@ -1,43 +1,42 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int n,m;
+int n, m;
 
-const int N=1003;
+const int N = 1003;
 
-int d[N][N]; 
+int d[N][N];
+
 int a[N];
 int s[N];
 int sum;
-int mind=1e9;
+int mind = 1e9;
 int minidx;
 int main()
 {
-	cin>>n>>m;
-	
-	for(int i=1;i<=n;i++)//µÚi¿Ã¹ûÊ÷ 
+	cin >> n >> m;
+
+	for (int i = 1; i <= n; i++) // ï¿½ï¿½iï¿½Ã¹ï¿½ï¿½ï¿½
 	{
-		cin>>a[i];//µÚi¿Ã¹ûÊ÷µÄ³õÊ¼ÊýÁ¿ 
-		s[i]=s[i-1]+a[i];
-		for(int j=1;j<=m;j++)
+		cin >> a[i]; // ï¿½ï¿½iï¿½Ã¹ï¿½ï¿½ï¿½ï¿½Ä³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+		s[i] = s[i - 1] + a[i];
+		for (int j = 1; j <= m; j++)
 		{
-			cin>>d[i][j];
-			d[i][j]+=d[i][j-1];//Ç°×ººÍ±íÊ¾±ä»¯Á¿ 
+			cin >> d[i][j];
+			d[i][j] += d[i][j - 1]; // Ç°×ºï¿½Í±ï¿½Ê¾ï¿½ä»¯ï¿½ï¿½
 		}
-		sum+=d[i][m];//×Ü±ä»¯Á¿ 
-		if(d[i][m]<mind)
+		sum += d[i][m]; // ï¿½Ü±ä»¯ï¿½ï¿½
+		if (d[i][m] < mind)
 		{
-			mind=d[i][m];
-			minidx=i;
+			mind = d[i][m];
+			minidx = i;
 		}
-		
 	}
-	
-	cout<<sum+s[n];
-	cout<<" "<<minidx<<" ";
-	cout<<abs(d[minidx][m]);
-	
-	
+
+	cout << sum + s[n];
+	cout << " " << minidx << " ";
+	cout << abs(d[minidx][m]);
+
 	return 0;
 }
