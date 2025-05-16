@@ -10,43 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b47fc51-3f11-48d1-8169-9bf99b4eb9af" name="Changes" comment="login页面">
-      <change beforePath="$PROJECT_DIR$/../../../gjmycg/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../gjmycg/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../gjmycg/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../gjmycg/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../gjmycg/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../gjmycg/gjmycg.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../gjmycg/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web02/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web02/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web02/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web02/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web02/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web02/.mvn/jvm.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web02/.mvn/maven.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web02/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web02/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web02/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web02/web02.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../webHK/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../webHK/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../webHK/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../webHK/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../webHK/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../webHK/.mvn/jvm.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../webHK/.mvn/maven.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../webHK/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../webHK/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../webHK/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../webHK/webHK.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web_HK/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web_HK/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web_HK/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web_HK/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web_HK/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web_HK/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../web_HK/web_HK.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67fc9d75-955a-41f0-8712-d532f002cd2e/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,6 +299,7 @@
       <workItem from="1734252067038" duration="1580000" />
       <workItem from="1735043800893" duration="34000" />
       <workItem from="1735043879389" duration="25000" />
+      <workItem from="1747361709170" duration="451000" />
     </task>
     <task id="LOCAL-00001" summary=":)">
       <option name="closed" value="true" />
