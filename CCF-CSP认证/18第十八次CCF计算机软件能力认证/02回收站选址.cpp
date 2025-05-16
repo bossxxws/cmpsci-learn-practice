@@ -1,79 +1,81 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-const int N=1e3+3;
+const int N = 1e3 + 3;
 
 #define x first
 #define y second
 
-typedef pair<int,int> PII;
+typedef pair<int, int> PII;
 
 PII a[N];
 
 int res[5];
 
-map<PII,bool> m;//¼ÇÂ¼¸ÃÎ»ÖÃÓÐÃ»ÓÐ 
+map<PII, bool> m; // ï¿½ï¿½Â¼ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½
 
-set<PII> s;//¼ÇÂ¼·ûºÏµÚÒ»ÌõÌõ¼þµÄ×ø±ê 
+set<PII> s; // ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ïµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 int n;
 
-int dx[4]={0,0,-1,1};
-int dy[4]={1,-1,0,0};
+int dx[4] = {0, 0, -1, 1};
+int dy[4] = {1, -1, 0, 0};
 
-int ddx[]={1,-1,1,-1};
-int ddy[]={-1,1,1,-1};
+int ddx[] = {1, -1, 1, -1};
+int ddy[] = {-1, 1, 1, -1};
 
 int main()
 {
-	cin>>n;
-	
-	for(int i=1;i<=n;i++)
+	cin >> n;
+
+	for (int i = 1; i <= n; i++)
 	{
-		cin>>a[i].x>>a[i].y;//¶ÁÈëÀ¬»øÕ¾µÄ×ø±ê 
-		
-		PII temp=make_pair(a[i].x,a[i].y);
-		
-		m[temp]=true;
+		cin >> a[i].x >> a[i].y; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+		PII temp = make_pair(a[i].x, a[i].y);
+
+		m[temp] = true;
 	}
-	
-	for(int i=1;i<=n;i++)
+
+	for (int i = 1; i <= n; i++)
 	{
-		int xx=a[i].x;
-		int yy=a[i].y;
-		
-		int cnt1=0;//¼ÇÂ¼ÉÏÏÂ×óÓÒ·ûºÏµÄµãµÄ¸öÊý 
-		for(int j=0;j<4;j++)
+		int xx = a[i].x;
+		int yy = a[i].y;
+
+		int cnt1 = 0; // ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò·ï¿½ï¿½ÏµÄµï¿½Ä¸ï¿½ï¿½ï¿½
+		for (int j = 0; j < 4; j++)
 		{
-			int nx=xx+dx[j];
-			int ny=yy+dy[j];
-			PII aim=make_pair(nx,ny);
-			if(m[aim]==true)cnt1++;
+			int nx = xx + dx[j];
+			int ny = yy + dy[j];
+			PII aim = make_pair(nx, ny);
+			if (m[aim] == true)
+				cnt1++;
 		}
-		
-		if(cnt1==4)
+
+		if (cnt1 == 4)
 		{
-			s.insert(make_pair(xx,yy));//²åÈë·ûºÏµÚÒ»ÌõÌõ¼þµÄ×ø±ê 
+			s.insert(make_pair(xx, yy)); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		}
-		
 	}
-	
-	for(auto tt:s)//¶ÔÃ¿Ò»¸ö×ø±ê½øÐÐÆÀ·Ö 
+
+	for (auto tt : s) // ï¿½ï¿½Ã¿Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	{
-		int sc=0;
-		int xxx=tt.x;
-		int yyy=tt.y;
-		for(int i=0;i<4;i++)
+		int sc = 0;
+		int xxx = tt.x;
+		int yyy = tt.y;
+		for (int i = 0; i < 4; i++)
 		{
-			int nxx=xxx+ddx[i];
-			int nyy=yyy+ddy[i];
-			if(m[make_pair(nxx,nyy)]==true)sc++;
+			int nxx = xxx + ddx[i];
+			int nyy = yyy + ddy[i];
+			if (m[make_pair(nxx, nyy)] == true)
+				sc++;
 		}
 		res[sc]++;
 	}
-	
-	for(int i=0;i<=4;i++)cout<<res[i]<<endl;
-	
+
+	for (int i = 0; i <= 4; i++)
+		cout << res[i] << endl;
+
 	return 0;
 }
