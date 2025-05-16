@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b47fc51-3f11-48d1-8169-9bf99b4eb9af" name="Changes" comment="login页面">
-      <change beforePath="$PROJECT_DIR$/../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,18 +33,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "bossxxws"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;bossxxws&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/bossxxws/computerscience.git",
-    "accountId": "e5d15526-925c-46e5-b5f0-a81554850140"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/bossxxws/computerscience.git&quot;,
+    &quot;accountId&quot;: &quot;e5d15526-925c-46e5-b5f0-a81554850140&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar!/javax/servlet/GenericServlet.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/druid-1.2.9.jar!/com/alibaba/druid/pool/DruidDataSource.class" root0="SKIP_INSPECTION" />
@@ -299,6 +298,8 @@
       <workItem from="1734177843353" duration="34000" />
       <workItem from="1734181262776" duration="49000" />
       <workItem from="1747409599948" duration="50000" />
+      <workItem from="1747410235471" duration="90000" />
+      <workItem from="1747410479878" duration="53000" />
     </task>
     <task id="LOCAL-00001" summary=":)">
       <option name="closed" value="true" />
