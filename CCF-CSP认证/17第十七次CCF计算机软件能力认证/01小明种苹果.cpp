@@ -13,6 +13,7 @@ int s[N];
 int sum;
 int mind = 1e9;
 int minidx;
+
 int main()
 {
 	cin >> n >> m;
